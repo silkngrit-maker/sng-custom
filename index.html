@@ -1,0 +1,1383 @@
+<!doctype html>
+<html class="js" lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>S'N'G · Crea il tuo pantalone</title>
+<meta name="description" content="Configuratore Silk'n'Grit: scegli denim, seta e ricamo. Funziona anche senza internet.">
+<meta name="theme-color" content="#0b0907">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="S'N'G Custom">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<style data-shopify>
+      
+      
+      
+      
+      @font-face {
+  font-family: Amiri;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("a/amiri_n4.fee8c3379b68ea3b9c7241a63b8a252071faad52.woff2") format("woff2"),
+       url("a/amiri_n4.94cde4e18ec8ae53bf8f7240b84e1f76ce23772d.woff") format("woff");
+}
+
+
+      
+        :root,
+        .color-scheme-1 {
+          --color-background: 199,201,197;
+        
+          --gradient-background: linear-gradient(310deg, rgba(216, 217, 216, 1) 15%, rgba(25, 29, 29, 1) 73%);
+        
+
+        
+
+        --color-foreground: 228,232,235;
+        --color-background-contrast: 135,140,131;
+        --color-shadow: 18,18,18;
+        --color-button: 18,18,18;
+        --color-button-text: 255,255,255;
+        --color-secondary-button: 199,201,197;
+        --color-secondary-button-text: 18,18,18;
+        --color-link: 18,18,18;
+        --color-badge-foreground: 228,232,235;
+        --color-badge-background: 199,201,197;
+        --color-badge-border: 228,232,235;
+        --payment-terms-background-color: rgb(199 201 197);
+      }
+      
+        
+        .color-scheme-2 {
+          --color-background: 217,219,223;
+        
+          --gradient-background: linear-gradient(292deg, rgba(210, 213, 221, 1) 56%, rgba(17, 15, 9, 1) 100%);
+        
+
+        
+
+        --color-foreground: 18,18,18;
+        --color-background-contrast: 148,153,165;
+        --color-shadow: 18,18,18;
+        --color-button: 18,18,18;
+        --color-button-text: 228,232,235;
+        --color-secondary-button: 217,219,223;
+        --color-secondary-button-text: 18,18,18;
+        --color-link: 18,18,18;
+        --color-badge-foreground: 18,18,18;
+        --color-badge-background: 217,219,223;
+        --color-badge-border: 18,18,18;
+        --payment-terms-background-color: rgb(217 219 223);
+      }
+      
+        
+        .color-scheme-3 {
+          --color-background: 0,0,0;
+        
+          --gradient-background: radial-gradient(rgba(201, 218, 216, 1), rgba(0, 0, 0, 1) 85%);
+        
+
+        
+
+        --color-foreground: 255,255,255;
+        --color-background-contrast: 128,128,128;
+        --color-shadow: 0,0,0;
+        --color-button: 0,0,0;
+        --color-button-text: 206,211,220;
+        --color-secondary-button: 0,0,0;
+        --color-secondary-button-text: 206,211,220;
+        --color-link: 206,211,220;
+        --color-badge-foreground: 255,255,255;
+        --color-badge-background: 0,0,0;
+        --color-badge-border: 255,255,255;
+        --payment-terms-background-color: rgb(0 0 0);
+      }
+      
+        
+        .color-scheme-4 {
+          --color-background: 18,18,18;
+        
+          --gradient-background: radial-gradient(rgba(0, 0, 0, 1), rgba(247, 237, 198, 1) 77%);
+        
+
+        
+
+        --color-foreground: 255,255,255;
+        --color-background-contrast: 146,146,146;
+        --color-shadow: 18,18,18;
+        --color-button: 255,255,255;
+        --color-button-text: 18,18,18;
+        --color-secondary-button: 18,18,18;
+        --color-secondary-button-text: 255,255,255;
+        --color-link: 255,255,255;
+        --color-badge-foreground: 255,255,255;
+        --color-badge-background: 18,18,18;
+        --color-badge-border: 255,255,255;
+        --payment-terms-background-color: rgb(18 18 18);
+      }
+      
+        
+        .color-scheme-5 {
+          --color-background: 16,12,9;
+        
+          --gradient-background: linear-gradient(0deg, rgba(17, 15, 9, 1) 46%, rgba(150, 163, 162, 1) 100%);
+        
+
+        
+
+        --color-foreground: 255,255,255;
+        --color-background-contrast: 172,135,108;
+        --color-shadow: 18,18,18;
+        --color-button: 255,255,255;
+        --color-button-text: 51,79,180;
+        --color-secondary-button: 16,12,9;
+        --color-secondary-button-text: 255,255,255;
+        --color-link: 255,255,255;
+        --color-badge-foreground: 255,255,255;
+        --color-badge-background: 16,12,9;
+        --color-badge-border: 255,255,255;
+        --payment-terms-background-color: rgb(16 12 9);
+      }
+      
+        
+        .color-scheme-4bc18586-d5d1-44a9-8925-5b22d6fe524c {
+          --color-background: 234,220,194;
+        
+          --gradient-background: linear-gradient(107deg, rgba(243, 233, 214, 0.96) 14%, rgba(234, 220, 194, 1) 50%, rgba(214, 196, 161, 1) 85%);
+        
+
+        
+
+        --color-foreground: 18,18,18;
+        --color-background-contrast: 201,166,99;
+        --color-shadow: 18,18,18;
+        --color-button: 18,18,18;
+        --color-button-text: 234,220,194;
+        --color-secondary-button: 234,220,194;
+        --color-secondary-button-text: 234,220,194;
+        --color-link: 234,220,194;
+        --color-badge-foreground: 18,18,18;
+        --color-badge-background: 234,220,194;
+        --color-badge-border: 18,18,18;
+        --payment-terms-background-color: rgb(234 220 194);
+      }
+      
+        
+        .color-scheme-ac6dd18c-f2f0-435c-a89e-c8313ae89f21 {
+          --color-background: 0,0,0;
+        
+          --gradient-background: linear-gradient(12deg, rgba(241, 230, 185, 1), rgba(218, 209, 174, 1) 3%, rgba(18, 18, 18, 1) 100%);
+        
+
+        
+
+        --color-foreground: 18,18,18;
+        --color-background-contrast: 128,128,128;
+        --color-shadow: 18,18,18;
+        --color-button: 18,18,18;
+        --color-button-text: 255,255,255;
+        --color-secondary-button: 0,0,0;
+        --color-secondary-button-text: 18,18,18;
+        --color-link: 18,18,18;
+        --color-badge-foreground: 18,18,18;
+        --color-badge-background: 0,0,0;
+        --color-badge-border: 18,18,18;
+        --payment-terms-background-color: rgb(0 0 0);
+      }
+      
+        
+        .color-scheme-622dda4a-4ec3-4bb1-967f-22f63d6add8f {
+          --color-background: 52,53,55;
+        
+          --gradient-background: #343537;
+        
+
+        
+
+        --color-foreground: 240,234,210;
+        --color-background-contrast: 64,66,68;
+        --color-shadow: 206,211,220;
+        --color-button: 206,211,220;
+        --color-button-text: 255,255,255;
+        --color-secondary-button: 52,53,55;
+        --color-secondary-button-text: 206,211,220;
+        --color-link: 206,211,220;
+        --color-badge-foreground: 240,234,210;
+        --color-badge-background: 52,53,55;
+        --color-badge-border: 240,234,210;
+        --payment-terms-background-color: rgb(52 53 55);
+      }
+      
+        
+        .color-scheme-16e75b4d-bf74-40cc-ab19-c8775650fa32 {
+          --color-background: 0,0,0;
+        
+          --gradient-background: linear-gradient(7deg, rgba(234, 220, 194, 0.78) 16%, rgba(0, 0, 0, 1) 72%, rgba(0, 0, 0, 1) 100%);
+        
+
+        
+
+        --color-foreground: 240,234,210;
+        --color-background-contrast: 128,128,128;
+        --color-shadow: 18,18,18;
+        --color-button: 0,0,0;
+        --color-button-text: 255,255,255;
+        --color-secondary-button: 0,0,0;
+        --color-secondary-button-text: 18,18,18;
+        --color-link: 18,18,18;
+        --color-badge-foreground: 240,234,210;
+        --color-badge-background: 0,0,0;
+        --color-badge-border: 240,234,210;
+        --payment-terms-background-color: rgb(0 0 0);
+      }
+      
+        
+        .color-scheme-27d1ce4c-7da9-47e3-804f-a4ac393bad7b {
+          --color-background: 0,0,0;
+        
+          --gradient-background: #000000;
+        
+
+        
+
+        --color-foreground: 206,211,220;
+        --color-background-contrast: 128,128,128;
+        --color-shadow: 18,18,18;
+        --color-button: 0,0,0;
+        --color-button-text: 255,255,255;
+        --color-secondary-button: 0,0,0;
+        --color-secondary-button-text: 18,18,18;
+        --color-link: 18,18,18;
+        --color-badge-foreground: 206,211,220;
+        --color-badge-background: 0,0,0;
+        --color-badge-border: 206,211,220;
+        --payment-terms-background-color: rgb(0 0 0);
+      }
+      
+        
+        .color-scheme-5fcceee7-fd34-4f45-b6d5-816656cd92d9 {
+          --color-background: 128,132,138;
+        
+          --gradient-background: linear-gradient(180deg, rgba(81, 83, 87, 1) 51%, rgba(0, 0, 0, 1) 100%);
+        
+
+        
+
+        --color-foreground: 214,215,212;
+        --color-background-contrast: 66,69,72;
+        --color-shadow: 89,92,97;
+        --color-button: 60,58,58;
+        --color-button-text: 89,92,97;
+        --color-secondary-button: 128,132,138;
+        --color-secondary-button-text: 60,58,58;
+        --color-link: 60,58,58;
+        --color-badge-foreground: 214,215,212;
+        --color-badge-background: 128,132,138;
+        --color-badge-border: 214,215,212;
+        --payment-terms-background-color: rgb(128 132 138);
+      }
+      
+        
+        .color-scheme-e08d8a8e-b925-4709-971e-619e6e9b0506 {
+          --color-background: 206,211,220;
+        
+          --gradient-background: linear-gradient(180deg, rgba(24, 21, 17, 1) 75%, rgba(161, 175, 174, 1) 100%);
+        
+
+        
+
+        --color-foreground: 0,0,0;
+        --color-background-contrast: 132,144,167;
+        --color-shadow: 18,18,18;
+        --color-button: 0,0,0;
+        --color-button-text: 255,255,255;
+        --color-secondary-button: 206,211,220;
+        --color-secondary-button-text: 18,18,18;
+        --color-link: 18,18,18;
+        --color-badge-foreground: 0,0,0;
+        --color-badge-background: 206,211,220;
+        --color-badge-border: 0,0,0;
+        --payment-terms-background-color: rgb(206 211 220);
+      }
+      
+        
+        .color-scheme-7c29863f-0973-43ed-aec5-b2f76481e508 {
+          --color-background: 89,92,97;
+        
+          --gradient-background: radial-gradient(rgba(206, 211, 220, 1), rgba(0, 0, 0, 1) 85%);
+        
+
+        
+
+        --color-foreground: 0,0,0;
+        --color-background-contrast: 28,29,31;
+        --color-shadow: 214,215,212;
+        --color-button: 206,211,220;
+        --color-button-text: 206,211,220;
+        --color-secondary-button: 89,92,97;
+        --color-secondary-button-text: 206,211,220;
+        --color-link: 206,211,220;
+        --color-badge-foreground: 0,0,0;
+        --color-badge-background: 89,92,97;
+        --color-badge-border: 0,0,0;
+        --payment-terms-background-color: rgb(89 92 97);
+      }
+      
+        
+        .color-scheme-12430817-89e9-42b2-ab7f-71fa07559604 {
+          --color-background: 0,0,0;
+        
+          --gradient-background: linear-gradient(180deg, rgba(86, 88, 91, 1) 1%, rgba(0, 0, 0, 0.81) 100%);
+        
+
+        
+
+        --color-foreground: 255,255,255;
+        --color-background-contrast: 128,128,128;
+        --color-shadow: 0,0,0;
+        --color-button: 0,0,0;
+        --color-button-text: 255,255,255;
+        --color-secondary-button: 0,0,0;
+        --color-secondary-button-text: 255,255,255;
+        --color-link: 255,255,255;
+        --color-badge-foreground: 255,255,255;
+        --color-badge-background: 0,0,0;
+        --color-badge-border: 255,255,255;
+        --payment-terms-background-color: rgb(0 0 0);
+      }
+      
+        
+        .color-scheme-8603aee7-1e9f-4e35-b5ec-ac04bbe5846b {
+          --color-background: 0,0,0;
+        
+          --gradient-background: linear-gradient(0deg, rgba(136, 140, 146, 1), rgba(26, 26, 27, 1) 46%);
+        
+
+        
+
+        --color-foreground: 255,255,255;
+        --color-background-contrast: 128,128,128;
+        --color-shadow: 0,0,0;
+        --color-button: 0,0,0;
+        --color-button-text: 206,211,220;
+        --color-secondary-button: 0,0,0;
+        --color-secondary-button-text: 206,211,220;
+        --color-link: 206,211,220;
+        --color-badge-foreground: 255,255,255;
+        --color-badge-background: 0,0,0;
+        --color-badge-border: 255,255,255;
+        --payment-terms-background-color: rgb(0 0 0);
+      }
+      
+        
+        .color-scheme-sng-grafite {
+          --color-background: 27,29,33;
+        
+          --gradient-background: linear-gradient(90deg, rgba(6, 6, 7, 1) 0%, rgba(27, 29, 33, 1) 45%, rgba(81, 84, 89, 1) 100%);
+        
+
+        
+
+        --color-foreground: 255,255,255;
+        --color-background-contrast: 38,41,47;
+        --color-shadow: 0,0,0;
+        --color-button: 0,0,0;
+        --color-button-text: 206,211,220;
+        --color-secondary-button: 27,29,33;
+        --color-secondary-button-text: 206,211,220;
+        --color-link: 206,211,220;
+        --color-badge-foreground: 255,255,255;
+        --color-badge-background: 27,29,33;
+        --color-badge-border: 255,255,255;
+        --payment-terms-background-color: rgb(27 29 33);
+      }
+      
+        
+        .color-scheme-sng-caldo {
+          --color-background: 34,27,20;
+        
+          --gradient-background: linear-gradient(90deg, rgba(7, 5, 4, 1) 0%, rgba(34, 27, 20, 1) 45%, rgba(93, 81, 63, 1) 100%);
+        
+
+        
+
+        --color-foreground: 255,255,255;
+        --color-background-contrast: 50,40,29;
+        --color-shadow: 0,0,0;
+        --color-button: 0,0,0;
+        --color-button-text: 206,211,220;
+        --color-secondary-button: 34,27,20;
+        --color-secondary-button-text: 206,211,220;
+        --color-link: 206,211,220;
+        --color-badge-foreground: 255,255,255;
+        --color-badge-background: 34,27,20;
+        --color-badge-border: 255,255,255;
+        --payment-terms-background-color: rgb(34 27 20);
+      }
+      
+        
+        .color-scheme-sng-salvia {
+          --color-background: 23,30,25;
+        
+          --gradient-background: linear-gradient(90deg, rgba(4, 6, 5, 1) 0%, rgba(23, 30, 25, 1) 45%, rgba(80, 91, 78, 1) 100%);
+        
+
+        
+
+        --color-foreground: 255,255,255;
+        --color-background-contrast: 34,44,37;
+        --color-shadow: 0,0,0;
+        --color-button: 0,0,0;
+        --color-button-text: 206,211,220;
+        --color-secondary-button: 23,30,25;
+        --color-secondary-button-text: 206,211,220;
+        --color-link: 206,211,220;
+        --color-badge-foreground: 255,255,255;
+        --color-badge-background: 23,30,25;
+        --color-badge-border: 255,255,255;
+        --payment-terms-background-color: rgb(23 30 25);
+      }
+      
+        
+        .color-scheme-sng-notte {
+          --color-background: 20,26,38;
+        
+          --gradient-background: linear-gradient(90deg, rgba(4, 6, 10, 1) 0%, rgba(20, 26, 38, 1) 45%, rgba(71, 81, 99, 1) 100%);
+        
+
+        
+
+        --color-foreground: 255,255,255;
+        --color-background-contrast: 126,146,187;
+        --color-shadow: 0,0,0;
+        --color-button: 0,0,0;
+        --color-button-text: 206,211,220;
+        --color-secondary-button: 20,26,38;
+        --color-secondary-button-text: 206,211,220;
+        --color-link: 206,211,220;
+        --color-badge-foreground: 255,255,255;
+        --color-badge-background: 20,26,38;
+        --color-badge-border: 255,255,255;
+        --payment-terms-background-color: rgb(20 26 38);
+      }
+      
+        
+        .color-scheme-sng-bordeaux {
+          --color-background: 36,20,22;
+        
+          --gradient-background: linear-gradient(90deg, rgba(7, 4, 4, 1) 0%, rgba(36, 20, 22, 1) 45%, rgba(95, 71, 71, 1) 100%);
+        
+
+        
+
+        --color-foreground: 255,255,255;
+        --color-background-contrast: 184,127,134;
+        --color-shadow: 0,0,0;
+        --color-button: 0,0,0;
+        --color-button-text: 206,211,220;
+        --color-secondary-button: 36,20,22;
+        --color-secondary-button-text: 206,211,220;
+        --color-link: 206,211,220;
+        --color-badge-foreground: 255,255,255;
+        --color-badge-background: 36,20,22;
+        --color-badge-border: 255,255,255;
+        --payment-terms-background-color: rgb(36 20 22);
+      }
+      
+        
+        .color-scheme-sng-oliva {
+          --color-background: 30,29,19;
+        
+          --gradient-background: linear-gradient(90deg, rgba(6, 6, 4, 1) 0%, rgba(30, 29, 19, 1) 45%, rgba(89, 87, 66, 1) 100%);
+        
+
+        
+
+        --color-foreground: 255,255,255;
+        --color-background-contrast: 46,44,29;
+        --color-shadow: 0,0,0;
+        --color-button: 0,0,0;
+        --color-button-text: 206,211,220;
+        --color-secondary-button: 30,29,19;
+        --color-secondary-button-text: 206,211,220;
+        --color-link: 206,211,220;
+        --color-badge-foreground: 255,255,255;
+        --color-badge-background: 30,29,19;
+        --color-badge-border: 255,255,255;
+        --payment-terms-background-color: rgb(30 29 19);
+      }
+      
+
+      body, .color-scheme-1, .color-scheme-2, .color-scheme-3, .color-scheme-4, .color-scheme-5, .color-scheme-4bc18586-d5d1-44a9-8925-5b22d6fe524c, .color-scheme-ac6dd18c-f2f0-435c-a89e-c8313ae89f21, .color-scheme-622dda4a-4ec3-4bb1-967f-22f63d6add8f, .color-scheme-16e75b4d-bf74-40cc-ab19-c8775650fa32, .color-scheme-27d1ce4c-7da9-47e3-804f-a4ac393bad7b, .color-scheme-5fcceee7-fd34-4f45-b6d5-816656cd92d9, .color-scheme-e08d8a8e-b925-4709-971e-619e6e9b0506, .color-scheme-7c29863f-0973-43ed-aec5-b2f76481e508, .color-scheme-12430817-89e9-42b2-ab7f-71fa07559604, .color-scheme-8603aee7-1e9f-4e35-b5ec-ac04bbe5846b, .color-scheme-sng-grafite, .color-scheme-sng-caldo, .color-scheme-sng-salvia, .color-scheme-sng-notte, .color-scheme-sng-bordeaux, .color-scheme-sng-oliva {
+        color: rgba(var(--color-foreground), 0.75);
+        background-color: rgb(var(--color-background));
+      }
+
+      :root {
+        --font-body-family: "New York", Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+        --font-body-style: normal;
+        --font-body-weight: 400;
+        --font-body-weight-bold: 700;
+
+        --font-heading-family: Amiri, serif;
+        --font-heading-style: normal;
+        --font-heading-weight: 400;
+
+        --font-body-scale: 1.0;
+        --font-heading-scale: 1.0;
+
+        --media-padding: px;
+        --media-border-opacity: 0.05;
+        --media-border-width: 1px;
+        --media-radius: 0px;
+        --media-shadow-opacity: 0.0;
+        --media-shadow-horizontal-offset: 0px;
+        --media-shadow-vertical-offset: 4px;
+        --media-shadow-blur-radius: 5px;
+        --media-shadow-visible: 0;
+
+        --page-width: 110rem;
+        --page-width-margin: 0rem;
+
+        --product-card-image-padding: 0.0rem;
+        --product-card-corner-radius: 0.0rem;
+        --product-card-text-alignment: left;
+        --product-card-border-width: 0.0rem;
+        --product-card-border-opacity: 0.1;
+        --product-card-shadow-opacity: 0.0;
+        --product-card-shadow-visible: 0;
+        --product-card-shadow-horizontal-offset: 0.0rem;
+        --product-card-shadow-vertical-offset: 0.4rem;
+        --product-card-shadow-blur-radius: 0.5rem;
+
+        --collection-card-image-padding: 0.0rem;
+        --collection-card-corner-radius: 0.0rem;
+        --collection-card-text-alignment: left;
+        --collection-card-border-width: 0.0rem;
+        --collection-card-border-opacity: 0.1;
+        --collection-card-shadow-opacity: 0.0;
+        --collection-card-shadow-visible: 0;
+        --collection-card-shadow-horizontal-offset: 0.0rem;
+        --collection-card-shadow-vertical-offset: 0.4rem;
+        --collection-card-shadow-blur-radius: 0.5rem;
+
+        --blog-card-image-padding: 0.0rem;
+        --blog-card-corner-radius: 0.0rem;
+        --blog-card-text-alignment: left;
+        --blog-card-border-width: 0.0rem;
+        --blog-card-border-opacity: 0.1;
+        --blog-card-shadow-opacity: 0.0;
+        --blog-card-shadow-visible: 0;
+        --blog-card-shadow-horizontal-offset: 0.0rem;
+        --blog-card-shadow-vertical-offset: 0.4rem;
+        --blog-card-shadow-blur-radius: 0.5rem;
+
+        --badge-corner-radius: 4.0rem;
+
+        --popup-border-width: 1px;
+        --popup-border-opacity: 0.1;
+        --popup-corner-radius: 0px;
+        --popup-shadow-opacity: 0.05;
+        --popup-shadow-horizontal-offset: 0px;
+        --popup-shadow-vertical-offset: 4px;
+        --popup-shadow-blur-radius: 5px;
+
+        --drawer-border-width: 1px;
+        --drawer-border-opacity: 0.1;
+        --drawer-shadow-opacity: 0.0;
+        --drawer-shadow-horizontal-offset: 0px;
+        --drawer-shadow-vertical-offset: 4px;
+        --drawer-shadow-blur-radius: 5px;
+
+        --spacing-sections-desktop: 0px;
+        --spacing-sections-mobile: 0px;
+
+        --grid-desktop-vertical-spacing: 8px;
+        --grid-desktop-horizontal-spacing: 8px;
+        --grid-mobile-vertical-spacing: 4px;
+        --grid-mobile-horizontal-spacing: 4px;
+
+        --text-boxes-border-opacity: 0.1;
+        --text-boxes-border-width: 0px;
+        --text-boxes-radius: 0px;
+        --text-boxes-shadow-opacity: 0.0;
+        --text-boxes-shadow-visible: 0;
+        --text-boxes-shadow-horizontal-offset: 0px;
+        --text-boxes-shadow-vertical-offset: 4px;
+        --text-boxes-shadow-blur-radius: 5px;
+
+        --buttons-radius: 0px;
+        --buttons-radius-outset: 0px;
+        --buttons-border-width: 1px;
+        --buttons-border-opacity: 1.0;
+        --buttons-shadow-opacity: 0.0;
+        --buttons-shadow-visible: 0;
+        --buttons-shadow-horizontal-offset: 0px;
+        --buttons-shadow-vertical-offset: 4px;
+        --buttons-shadow-blur-radius: 5px;
+        --buttons-border-offset: 0px;
+
+        --inputs-radius: 0px;
+        --inputs-border-width: 1px;
+        --inputs-border-opacity: 0.55;
+        --inputs-shadow-opacity: 0.0;
+        --inputs-shadow-horizontal-offset: 0px;
+        --inputs-margin-offset: 0px;
+        --inputs-shadow-vertical-offset: 4px;
+        --inputs-shadow-blur-radius: 5px;
+        --inputs-radius-outset: 0px;
+
+        --variant-pills-radius: 40px;
+        --variant-pills-border-width: 1px;
+        --variant-pills-border-opacity: 0.55;
+        --variant-pills-shadow-opacity: 0.0;
+        --variant-pills-shadow-horizontal-offset: 0px;
+        --variant-pills-shadow-vertical-offset: 4px;
+        --variant-pills-shadow-blur-radius: 5px;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: inherit;
+      }
+
+      html {
+        box-sizing: border-box;
+        font-size: calc(var(--font-body-scale) * 62.5%);
+        height: 100%;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100%;
+        margin: 0;
+        font-size: 1.5rem;
+        letter-spacing: 0.06rem;
+        line-height: calc(1 + 0.8 / var(--font-body-scale));
+        font-family: var(--font-body-family);
+        font-style: var(--font-body-style);
+        font-weight: var(--font-body-weight);
+      }
+
+      @media screen and (min-width: 750px) {
+        body {
+          font-size: 1.6rem;
+        }
+      }
+    </style>
+<link rel="stylesheet" href="a/base.css">
+<link rel="stylesheet" href="a/sng-tokens.css">
+<link rel="stylesheet" href="fonts/fonts.css">
+<style>
+/* Versione offline: solo visualizzazione */
+html, body { margin: 0; background: #0b0907; }
+html .cfg-send, html .cfg-share, html .cfg-avviso, html .cfg__back { display: none !important; }
+.off-update { position: fixed; left: 50%; top: calc(14px + env(safe-area-inset-top)); transform: translateX(-50%); z-index: 1000;
+  display: flex; align-items: center; gap: 14px; padding: 10px 10px 10px 18px; border-radius: 99px;
+  background: rgba(20,17,13,.94); border: 1px solid rgba(247,243,222,.18); color: #f7f3de; box-shadow: 0 10px 30px rgba(0,0,0,.45);
+  font: 500 13px/1.2 Archivo, system-ui, sans-serif; white-space: nowrap; }
+.off-update[hidden] { display: none; }
+.off-update button { border: 0; border-radius: 99px; padding: 9px 16px; background: #f0ead2; color: #181511; cursor: pointer;
+  font: 600 11px/1 Archivo, sans-serif; letter-spacing: .14em; text-transform: uppercase; }
+
+</style>
+</head>
+<body class="gradient sng-offline">
+<main id="MainContent" class="content-for-layout" role="main">
+      <section id="shopify-section-template--33186276606297__configuratore" class="shopify-section sngx-configuratore"><link href="sng-cfg.css" rel="stylesheet" type="text/css" media="all" />
+<style>
+  .cfg[hidden] { display: none !important; }
+  /* freccetta per tornare alla pagina di prima, come quella di "< Collections" ma senza scritta */
+  .cfg__back { display: inline-flex; align-items: center; justify-content: center; width: 30px; height: 44px; margin: -12px 4px -12px -8px; vertical-align: middle;
+    color: #F7F3DE; opacity: .7; text-decoration: none; transition: opacity .3s ease; }
+  .cfg__back:hover, .cfg__back:focus-visible { opacity: 1; }
+  .cfg__back svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; transition: transform .3s ease; }
+  .cfg__back:hover svg { transform: translateX(-3px); }
+
+  /* Telefono: tutto in una schermata. In alto il titolo, al centro la foto intera, sotto un pannello di vetro
+     con un passaggio alla volta (Colore · Tonalità · Seta). Il pannello sta sotto la foto, non sopra:
+     mentre si sceglie il pantalone resta sempre tutto visibile.
+     Su computer e iPad orizzontale il pannello sta a sinistra (sng-cfg.css). */
+  .side__note--short { display: none; }
+  .side__note a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
+  @media (max-width: 899px) {
+    .cfg { height: calc(100vh - var(--cfg-top, 64px)); height: calc(100svh - var(--cfg-top, 64px)); min-height: 520px;
+      grid-template-rows: auto minmax(0, 1fr) auto; grid-template-areas: "head" "photo" "sheet"; -webkit-tap-highlight-color: transparent; }
+    .cfg button { -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
+
+    /* testata in due righe: il titolo, poi Davanti/Dietro a destra */
+    .cfg__head { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; column-gap: 12px; row-gap: 6px; padding: 10px 16px 0; }
+    .cfg__head > div:first-child { display: contents; }
+    .cfg__eyebrow { display: none; }
+    .cfg__title { grid-column: 1 / -1; font-size: 22px; letter-spacing: -.015em; white-space: nowrap; }
+    .cfg__views { grid-column: 2; grid-row: 2; display: flex; flex-wrap: nowrap; width: max-content; }
+    .cfg__views button { flex: none; white-space: nowrap; }
+    .cfg__views { gap: 0; padding: 3px; border-radius: 99px; background: rgba(0,0,0,.32); border: 1px solid rgba(247,243,222,.12);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.06); }
+    .cfg__views button { border: 0; border-radius: 99px; background: transparent; padding: 8px 13px; font-size: 10px; letter-spacing: .12em; transition: background-color .2s, color .2s; }
+    .cfg__views button[aria-pressed="true"] { background: var(--btn); color: var(--btn-text); }
+
+    /* La foto ha tutto lo spazio tra il titolo e il pannello: il pantalone si vede sempre intero */
+    .cfg__stage { grid-area: auto; grid-row: 2; grid-column: 1; }
+    .cfg__photo { inset: 22px 8px 8px; }
+    .cfg__hint { top: 4px; bottom: auto; font-size: 10px; letter-spacing: .16em; }
+
+    .cfg__sheet { display: block; grid-row: 3; grid-column: 1; position: relative; z-index: 4; isolation: isolate;
+      margin: 0 10px max(10px, env(safe-area-inset-bottom)); padding: 5px 5px 6px; border-radius: 26px;
+      background: linear-gradient(180deg, rgba(58,50,42,.26) 0%, rgba(22,19,15,.5) 55%);
+      -webkit-backdrop-filter: blur(16px) saturate(180%); backdrop-filter: blur(16px) saturate(180%);
+      border: 1px solid rgba(247,243,222,.14);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.24), inset 0 -1px 0 rgba(255,255,255,.05), 0 24px 60px rgba(0,0,0,.55), 0 2px 8px rgba(0,0,0,.3); }
+    /* riflesso del vetro in alto */
+    .cfg__sheet::before { content: ''; position: absolute; inset: 0; z-index: -1; border-radius: inherit; pointer-events: none;
+      background: radial-gradient(120% 60% at 20% 0%, rgba(255,255,255,.10), transparent 60%); }
+
+    .cfg__tabs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2px; padding: 3px; border-radius: 22px; background: rgba(0,0,0,.28); }
+    .cfg__tab { min-width: 0; min-height: 46px; padding: 6px 8px; border: 0; border-radius: 19px; background: transparent; color: var(--muted); font: inherit; cursor: pointer;
+      display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; transition: background-color .22s ease, color .22s ease, transform .16s ease; }
+    .cfg__tab:active { transform: scale(.97); }
+    .cfg__tab-n { font: 600 11px/1 Archivo, sans-serif; letter-spacing: .12em; text-transform: uppercase; }
+    .cfg__tab-n b { color: var(--accent); font-weight: 600; margin-right: 4px; }
+    .cfg__tab-v { max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 13px; line-height: 1.2; color: var(--text); opacity: .7; }
+    .cfg__tab[aria-selected="true"] { background: rgba(247,243,222,.15); color: var(--text); box-shadow: inset 0 1px 0 rgba(255,255,255,.18), 0 1px 4px rgba(0,0,0,.25); }
+    .cfg__tab[aria-selected="true"] .cfg__tab-v { opacity: 1; }
+    .cfg__tab:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+
+    /* Un passaggio alla volta, tutti della stessa altezza (la foto non salta) */
+    .cfg__sheet .side { display: none; height: 118px; padding: 10px 10px 4px; flex-direction: column; justify-content: center; }
+    .cfg__sheet[data-step="denim"] .side--fam, .cfg__sheet[data-step="denim"] .side--shade, .cfg__sheet[data-step="ins"] .side--ins, .cfg__sheet[data-step="emb"] .side--emb { display: flex; }
+    .cfg__sheet .side__label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); margin: 0; }
+
+    .families { gap: 8px; }
+    .fam { gap: 8px; }
+    .fam:active .fam__chip { transform: scale(.95); }
+    .fam__chip { width: min(54px, 100%); outline-width: 2px; }
+    .fam__name { font-size: 12px; letter-spacing: .1em; }
+
+    .side__note { margin: 0 0 10px; font-size: 12px; line-height: 1.35; color: var(--muted); text-align: center; }
+    /* Seta: sul telefono solo la frase corta, sotto le sete */
+    .side--ins .side__note { display: none; }
+    .side--ins .side__note--short { display: block; order: 2; margin: 6px 0 0; font-size: 11px; text-align: left; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .tone__preview, .tone__ends { display: none; }
+    .tone__track { padding-bottom: 30px; }
+    .tone input[type=range] { height: 30px; border-radius: 99px; border-color: rgba(247,243,222,.18); box-shadow: inset 0 1px 3px rgba(0,0,0,.35); }
+    .tone input[type=range]::-webkit-slider-thumb { width: 34px; height: 34px; background: #fbf8ec; border: 0; box-shadow: 0 0 0 .5px rgba(0,0,0,.2), 0 3px 10px rgba(0,0,0,.45), 0 1px 2px rgba(0,0,0,.3); }
+    .tone input[type=range]::-moz-range-thumb { width: 34px; height: 34px; background: #fbf8ec; border: 0; }
+    .tone__stops { left: 17px; right: 17px; top: 38px; }
+    .tone__stop { font-size: 12px; padding: 0 4px 6px; color: var(--muted); }
+    .tone__stop::before { height: 6px; margin-bottom: 3px; }
+    .tone__stop:first-child { left: -17px !important; } .tone__stop:first-child::before { margin-left: 17px; }
+    .tone__stop:last-child { right: -17px; } .tone__stop:last-child::before { margin-right: 17px; }
+    .tone__stop[aria-current="true"] { color: var(--text); font-weight: 600; }
+
+    .silks { gap: 10px; margin: 0 -10px; padding: 4px 10px 4px; scroll-snap-type: x mandatory; scroll-padding: 0 10px; scrollbar-width: none; -webkit-overflow-scrolling: touch; overscroll-behavior-x: contain; }
+    .silks::-webkit-scrollbar { display: none; }
+    .silk { width: 74px; scroll-snap-align: start; }
+    .silk:active .silk__chip { transform: scale(.96); }
+    .silk__chip { width: 74px; height: 48px; border-radius: 12px; transition: outline-color .2s, transform .16s ease; }
+    .silk__name { margin-top: 5px; font-size: 12px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .silk__left { margin-top: 1px; font-size: 9px; letter-spacing: .08em; }
+
+    /* sul telefono il riepilogo si legge già nelle schede, quindi la barra in fondo non serve */
+    .cfg__sheet .cfg__foot { display: none; }
+  }
+  /* Computer e iPad orizzontale: la disposizione (pannello a sinistra, pantalone grande a destra) è in sng-cfg.css */
+  /* Sete sul computer: sono una griglia che scorre in su e giù dentro il pannello. La regola del telefono in
+     sngx-capsule-ritocchi (scorrono solo in orizzontale) vale anche qui e bloccava la rotellina dopo la terza fila. */
+  @media (min-width: 900px) {
+    .cfg .silks { overflow: visible !important; overscroll-behavior: auto !important; touch-action: auto !important; scroll-snap-type: none !important; }
+  }
+  @media (max-width: 899px) and (prefers-reduced-transparency: reduce) {
+    .cfg__sheet { background: #1d1914; -webkit-backdrop-filter: none; backdrop-filter: none; }
+  }
+  @media (max-width: 899px) and (prefers-reduced-motion: reduce) {
+    .cfg__tab, .silk__chip, .fam__chip { transition: none; }
+  }
+</style>
+<style>
+  /* Tasti in basso: Fase precedente sempre a sinistra, la fase successiva sempre a destra.
+     Nella fase 3, a destra, il tasto grande "Salva e inviaci il tuo pantalone" (apre la schermata con l'immagine). */
+  .cfg__nav { justify-content: space-between; }
+  .cfg__nav .cfg__next, .cfg__nav .cfg-send { margin-left: auto; }
+  .cfg-send { display: none; position: relative; overflow: hidden; flex-direction: column; align-items: flex-start; justify-content: center; gap: 4px;
+    min-height: 66px; padding: 10px 58px 10px 24px; border: 1px solid #f3dfa6; border-radius: 99px; text-align: left; cursor: pointer;
+    background: linear-gradient(135deg, #b8913f 0%, #e9cf8e 45%, #c9a24e 100%); color: #1a130c;
+    box-shadow: 0 10px 28px rgba(184,146,63,.35), inset 0 1px 0 rgba(255,250,230,.6); -webkit-tap-highlight-color: transparent;
+    transition: transform .2s ease, box-shadow .2s ease; animation: cfgSaveIn .35s ease both; }
+  .cfg-send::after { content: ''; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(110deg, transparent 35%, rgba(255,255,255,.5) 50%, transparent 65%);
+    transform: translateX(-120%); animation: cfgSendShine 3.5s ease-in-out 1s infinite; }
+  @keyframes cfgSendShine { 0% { transform: translateX(-120%); } 30%, 100% { transform: translateX(120%); } }
+  .cfg-send:hover { transform: translateY(-2px); box-shadow: 0 14px 34px rgba(184,146,63,.5), inset 0 1px 0 rgba(255,250,230,.6); }
+  .cfg-send:active { transform: scale(.98); }
+  .cfg-send:focus-visible { outline: 2px solid #f7f3de; outline-offset: 3px; }
+  .cfg-send[aria-busy="true"] { opacity: .7; pointer-events: none; }
+  .cfg-send__t { font: 700 13px/1.15 Archivo, sans-serif; letter-spacing: .14em; text-transform: uppercase; }
+  .cfg-send__s { font: 500 13px/1.2 Fraunces, Georgia, serif; opacity: .8; }
+  .cfg-send__ico { position: absolute; right: 22px; top: 50%; width: 20px; height: 20px; margin-top: -10px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+  .cfg__sheet[data-step="emb"] .cfg-send { display: inline-flex; }
+  /* fase 3: la foto si avvicina al ricamo ma resta nel suo riquadro, senza coprire le scritte sopra */
+  .cfg__photo.is-emb-zoom { overflow: hidden; cursor: default; }
+
+  /* Ricamo, colore delle scritte: i due fili si toccano per sceglierli, sotto la cartella dei colori */
+  .emb__thread { display: inline-flex; align-items: center; gap: 7px; padding: 4px 11px 4px 4px; border: 1px solid transparent; border-radius: 99px;
+    background: none; color: var(--text); font: inherit; font-size: 12px; white-space: nowrap; cursor: pointer; -webkit-tap-highlight-color: transparent; transition: background-color .2s, border-color .2s; }
+  .emb__thread[aria-pressed="true"] { border-color: rgba(247,243,222,.45); background: rgba(247,243,222,.08); }
+  .emb__thread:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .emb__palette { display: flex; align-items: center; gap: 8px; max-width: 100%; overflow-x: auto; padding: 4px 3px; scrollbar-width: none; overscroll-behavior-x: contain; transition: opacity .25s ease; }
+  .emb__palette::-webkit-scrollbar { display: none; }
+  .emb--off .emb__palette, .emb--off .emb__reset { opacity: .3; pointer-events: none; }
+  .emb__sw { position: relative; flex: none; width: 38px; height: 38px; padding: 0; border: 1px solid rgba(247,243,222,.25); border-radius: 50%; background: var(--c); cursor: pointer;
+    outline: 2px solid transparent; outline-offset: 2px; box-shadow: inset 0 1px 2px rgba(255,255,255,.3), inset 0 -2px 3px rgba(0,0,0,.3); transition: outline-color .2s, transform .16s ease; }
+  .emb__sw:hover { transform: scale(1.08); }
+  .emb__sw[aria-pressed="true"] { outline-color: var(--text); }
+  .emb__sw:focus-visible { outline-color: var(--accent); }
+  .emb__sw--any { overflow: hidden; background: conic-gradient(#e84a4a, #e8c84a, #5ec46a, #4ac4e8, #5a5ae8, #d84ae8, #e84a4a); }
+  .emb__sw--any::after { content: '+'; position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; color: #fff; font: 600 20px/1 Archivo, sans-serif; text-shadow: 0 1px 3px rgba(0,0,0,.6); pointer-events: none; }
+  .emb__sw--any input { position: absolute; inset: 0; width: 100%; height: 100%; padding: 0; border: 0; opacity: 0; cursor: pointer; }
+  .emb__sep { flex: none; width: 1px; height: 26px; background: rgba(247,243,222,.2); }
+  .emb__reset { align-self: flex-start; padding: 2px 0; border: 0; background: none; color: var(--muted); font: 400 11px/1.3 Archivo, sans-serif; text-decoration: underline; text-underline-offset: 2px; cursor: pointer; }
+  .emb__reset[hidden] { display: none; }
+
+  /* Colori e font, uguali in tutto il configuratore: titoli in Fraunces, tutto il resto in Archivo;
+     testo chiaro (--text), secondario (--muted) e un solo colore d'accento, l'oro del tasto finale (--accent).
+     Nel tema chiaro (il sole) le stesse variabili le cambia sngx-sole. */
+  .cfg { --accent: #dcc07c; }
+  .tone__label { font: 600 10px/1 Archivo, sans-serif; letter-spacing: .22em; text-transform: uppercase; color: var(--muted); }
+
+  /* Computer: a sinistra il titolo con sotto la fase e le scelte; al centro il pantalone con Davanti/Dietro sotto;
+     a destra "Fase N" in alto e la tonalità; in basso Fase precedente a sinistra e la fase successiva a destra.
+     Il riepilogo (Modello, Colore, Tonalità…) non c'è più. */
+  @media (min-width: 900px) {
+    .cfg { grid-template-rows: auto auto minmax(0, 1fr) auto; grid-template-areas: "head photo phase" "sub photo tone" "left photo tone" "nav nav nav"; }
+    .cfg__stage { grid-row: 1 / 4; }
+    .cfg__sheet .cfg__foot { display: none; }
+    .cfg__head { display: contents; }
+    .cfg__head > div:first-child { grid-area: head; padding: 34px 20px 4px 44px; }
+    .cfg__title { position: relative; z-index: 3; white-space: nowrap; font-size: clamp(34px, 3.1vw, 54px); }
+    /* Davanti/Dietro sotto il pantalone, al centro */
+    .cfg__views { position: relative; top: auto; right: auto; grid-column: 2; grid-row: 4; justify-self: center; align-self: center; z-index: 4; margin-bottom: 18px; }
+    /* la fase: il nome sotto il titolo, "Fase N" in alto a destra */
+    .cfg__phase { display: contents; }
+    .cfg__phase-n { grid-area: phase; justify-self: end; align-self: start; text-align: right; padding: 38px 28px 0 0; position: relative; z-index: 2;
+      font: 600 clamp(18px, 1.6vw, 26px)/1 Archivo, sans-serif; letter-spacing: .24em; text-transform: uppercase; color: var(--accent); }
+    .cfg__phase-t { grid-area: sub; align-self: start; justify-self: start; text-align: left; padding: 0 20px 22px 44px; position: relative; z-index: 3; white-space: nowrap;
+      font: 500 clamp(20px, 1.7vw, 28px)/1.1 Fraunces, Georgia, serif; letter-spacing: -.005em; color: var(--muted); }
+    .side--fam, .side--ins, .side--emb { grid-row: 3; }
+    /* cinque colori di denim: due per riga, il Bianco da solo in fondo, largo */
+    .families { grid-template-rows: none; grid-auto-rows: minmax(0, 1fr); gap: 12px; }
+    .fam:nth-child(odd):last-child { grid-column: 1 / -1; }
+    /* colori dei fili grandi e tutti in vista, anche su più righe */
+    .emb__palette { flex-wrap: wrap; overflow: visible; gap: 12px; padding: 6px 4px; }
+    /* "Ricamo da vicino · tocca per uscire" resta leggibile sopra la foto ingrandita */
+    .cfg__hint { z-index: 4; text-shadow: 0 1px 6px rgba(0,0,0,.8); }
+    .cfg__nav { grid-area: nav; flex-direction: row; align-items: center; justify-self: stretch; width: auto; gap: 16px; padding: 4px 28px 22px 44px !important; }
+    .cfg__nav .cfg__next, .cfg__nav .cfg__prev { min-width: 210px; }
+    .cfg-send { min-width: 380px; }
+    /* tonalità: la scritta sopra, poi una linea sottile con un pallino piccolo */
+    .side--shade { grid-row: 2 / 4; }
+    .tone__row { gap: 12px; }
+    .tone__track { width: 24px; height: clamp(200px, 36vh, 340px); }
+    .tone input[type=range] { width: 6px; border: 0; box-shadow: inset 0 0 0 1px rgba(247,243,222,.16); }
+    .tone input[type=range]::-webkit-slider-thumb { width: 18px; height: 18px; background: #fbf8ec; border: 2px solid #1c1814;
+      box-shadow: 0 0 0 1px rgba(247,243,222,.55), 0 2px 8px rgba(0,0,0,.5); transition: transform .15s ease; }
+    .tone input[type=range]::-moz-range-thumb { width: 14px; height: 14px; background: #fbf8ec; border: 2px solid #1c1814; box-shadow: 0 0 0 1px rgba(247,243,222,.55), 0 2px 8px rgba(0,0,0,.5); }
+    .tone input[type=range]:hover::-webkit-slider-thumb { transform: scale(1.12); }
+  }
+  @media (min-width: 900px) and (max-width: 1180px) {
+    .cfg__nav { padding-left: 32px !important; }
+    .cfg__head > div:first-child, .cfg__phase-t { padding-left: 32px; }
+    .cfg__phase-n { padding-right: 20px; }
+    .cfg__nav .cfg__next, .cfg__nav .cfg__prev { min-width: 0; }
+    .cfg-send { min-width: 0; }
+  }
+
+  @media (max-width: 899px) {
+    /* Telefono: i tasti in una riga sotto il pannello, con gli stessi posti */
+    .cfg__sheet .cfg__nav { display: flex; align-items: center; gap: 8px; padding: 6px 2px 1px; }
+    .cfg__next, .cfg__prev { display: none; align-items: center; justify-content: center; gap: 8px; min-height: 40px; padding: 0 16px; border-radius: 99px;
+      font: 600 10px/1 Archivo, sans-serif; letter-spacing: .12em; text-transform: uppercase; white-space: nowrap; cursor: pointer; }
+    .cfg__next { border: 1px solid var(--btn); background: var(--btn); color: var(--btn-text); }
+    .cfg__next:disabled { background: transparent; color: var(--muted); border-color: var(--line); }
+    .cfg__next:disabled .cfg__next-go, .cfg__next:disabled .cfg__next-arrow, .cfg__next:not(:disabled) .cfg__next-wait { display: none; }
+    .cfg__next[data-for="denim"]:not(:disabled) { color: #fff8e6; border-color: rgba(247,243,222,.55); text-shadow: 0 1px 6px rgba(0,0,0,.7);
+      background: linear-gradient(180deg, rgba(10,8,6,.18), rgba(10,8,6,.5)), var(--silk, none) center / cover, #3b4a66; }
+    .cfg__prev { border: 1px solid rgba(247,243,222,.35); background: rgba(11,9,7,.35); color: var(--text); }
+    .cfg__sheet[data-step="denim"] .cfg__next[data-for="denim"], .cfg__sheet[data-step="ins"] .cfg__next[data-for="ins"],
+    .cfg__sheet[data-step="ins"] .cfg__prev[data-for="ins"], .cfg__sheet[data-step="emb"] .cfg__prev[data-for="emb"] { display: inline-flex; }
+    /* fase 3: Fase precedente diventa solo la freccia, così il tasto grande ha tutto lo spazio */
+    .cfg__prev[data-for="emb"] { flex: none; width: 44px; height: 44px; padding: 0; font-size: 0; letter-spacing: 0; }
+    .cfg__prev[data-for="emb"] span { font-size: 17px; }
+    /* Ricamo: interruttore, i due fili e la cartella dei colori (la nota non ci sta) */
+    .cfg__sheet .side--emb { height: 140px !important; }
+    .cfg__sheet .side--emb .emb { gap: 6px; }
+    .cfg__sheet .side--emb .emb__note { display: none; }
+    .emb__thread { font-size: 11px; padding: 3px 9px 3px 3px; gap: 5px; }
+    .emb__palette { align-self: stretch; justify-content: flex-start; gap: 9px; padding: 3px 6px; }
+    .emb__sw { width: 34px; height: 34px; }
+    .emb__reset { align-self: center; margin-top: -2px; font-size: 10px; }
+    .cfg-send { flex: 1; min-width: 0; min-height: 50px; padding: 7px 44px 7px 18px; gap: 2px; }
+    .cfg-send__t { font-size: 11px; letter-spacing: .1em; }
+    .cfg-send__s { font-size: 12px; }
+    .cfg-send__ico { right: 16px; width: 18px; height: 18px; margin-top: -9px; }
+    /* barra in basso più bassa: più spazio al pantalone */
+    .cfg__sheet { padding: 4px 4px 5px; border-radius: 22px; }
+    .cfg__tabs { border-radius: 18px; }
+    .cfg__tab { min-height: 38px; padding: 4px 6px; gap: 2px; border-radius: 15px; }
+    .cfg__tab-n { font-size: 10px; }
+    .cfg__tab-v { font-size: 12px; }
+    .cfg__sheet .side { height: 96px; padding: 6px 8px 2px; }
+    .families { gap: 6px; }
+    .fam { gap: 5px; }
+    .fam__chip { width: min(44px, 100%); }
+    .fam__name { font-size: 11px; }
+    .side__note { margin-bottom: 6px; font-size: 11px; }
+    /* tonalità: la scritta a sinistra, poi una linea sottile con un pallino piccolo */
+    .tone__row { gap: 10px; align-items: flex-start; }
+    .tone__label { flex: none; font-size: 9px; letter-spacing: .16em; line-height: 20px; }
+    .tone__track { padding-bottom: 22px; }
+    .tone input[type=range] { height: 6px; border: 0; box-shadow: inset 0 0 0 1px rgba(247,243,222,.16); }
+    .tone input[type=range]::-webkit-slider-thumb { width: 20px; height: 20px; background: #fbf8ec; border: 2px solid #1c1814; box-shadow: 0 0 0 1px rgba(247,243,222,.55), 0 2px 8px rgba(0,0,0,.5); }
+    .tone input[type=range]::-moz-range-thumb { width: 16px; height: 16px; background: #fbf8ec; border: 2px solid #1c1814; }
+    .tone__stops { left: 10px; right: 10px; top: 14px; }
+    .tone__stop:first-child { left: -10px !important; } .tone__stop:first-child::before { margin-left: 10px; }
+    .tone__stop:last-child { right: -10px; } .tone__stop:last-child::before { margin-right: 10px; }
+    .tone__stop { font-size: 11px; }
+    .silks { gap: 8px; padding-top: 2px; padding-bottom: 2px; }
+    .silk { width: 60px; }
+    .silk__chip { width: 60px; height: 38px; border-radius: 10px; }
+    .silk__name { margin-top: 4px; font-size: 11px; }
+    .side--ins .side__note--short { margin-top: 3px; font-size: 10px; }
+    /* 01 Denim: colore e tonalità insieme, uno sopra l'altro; le altre schede hanno la stessa altezza totale */
+    .cfg__sheet[data-step="denim"] .side--fam { height: 62px; padding-bottom: 0; }
+    .cfg__sheet[data-step="denim"] .side--shade { height: 58px; padding-top: 4px; }
+    .cfg__sheet .side--shade .side__note { display: none; }
+    .cfg__sheet .side--ins, .cfg__sheet .side--emb { height: 120px; }
+    .families { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 4px; } /* 5 quando torna il Bianco */
+    .fam__chip { width: min(38px, 100%); }
+    .emb { gap: 8px; align-items: center; }
+    .emb__switch { align-self: center; }
+    .emb__switch button { padding: 6px 12px; }
+    .emb__threads { justify-content: center; gap: 12px; }
+    .emb__note { font-size: 10px; margin: 0; }
+  }
+  /* Tasto nascosto "Inquadra la seta" (solo per noi, si accende con ?inquadra) */
+  .sng-crop-open { align-self: flex-start; margin-top: 8px; padding: 2px 0; border: 0; background: none; color: var(--muted); font: 500 11px/1.3 Archivo, sans-serif;
+    letter-spacing: .08em; text-decoration: underline dotted; text-underline-offset: 3px; cursor: pointer; }
+  .sng-crop { position: fixed; z-index: 1002; left: 20px; top: 50%; transform: translateY(-50%); width: min(360px, calc(100vw - 40px)); max-height: calc(100svh - 40px); overflow: auto;
+    display: flex; flex-direction: column; gap: 10px; padding: 14px; border: 1px solid rgba(247,243,222,.18); border-radius: 18px; background: rgba(20,17,13,.96);
+    box-shadow: 0 24px 60px rgba(0,0,0,.6); color: #f7f3de; font: 400 13px/1.4 Archivo, sans-serif; }
+  .sng-crop[hidden] { display: none; }
+  .sng-crop__head { display: flex; align-items: center; justify-content: space-between; font: 500 16px/1.2 Fraunces, Georgia, serif; }
+  .sng-crop__x { width: 32px; height: 32px; border: 0; background: none; color: inherit; font-size: 24px; line-height: 1; cursor: pointer; }
+  .sng-crop__pic { position: relative; align-self: center; overflow: hidden; border-radius: 8px; touch-action: none; cursor: grab; user-select: none; -webkit-user-select: none; }
+  .sng-crop__pic:active { cursor: grabbing; }
+  .sng-crop__pic img { display: block; max-width: 100%; max-height: 46svh; width: auto; height: auto; pointer-events: none; }
+  .sng-crop__frames i { position: absolute; border: 2px solid #f7f3de; border-radius: 3px; box-shadow: 0 0 0 9999px rgba(0,0,0,.45), inset 0 0 0 1px rgba(0,0,0,.4); pointer-events: none; }
+  .sng-crop__frames i + i { box-shadow: inset 0 0 0 1px rgba(0,0,0,.4); border-style: dashed; }
+  .sng-crop__hint, .sng-crop__help { margin: 0; color: rgba(247,243,222,.62); font-size: 12px; }
+  .sng-crop__zoom { display: flex; align-items: center; gap: 10px; font-size: 12px; }
+  .sng-crop__zoom input { flex: 1; accent-color: #dcc07c; }
+  .sng-crop__row { display: flex; gap: 8px; }
+  .sng-crop__row button { flex: 1; min-height: 40px; border-radius: 99px; border: 1px solid rgba(247,243,222,.35); background: none; color: inherit; font: 600 11px/1 Archivo, sans-serif;
+    letter-spacing: .1em; text-transform: uppercase; cursor: pointer; }
+  .sng-crop__row [data-copy] { background: #f0ead2; color: #181511; border-color: #f0ead2; }
+  .sng-crop__code { margin: 0; font: 600 13px/1.3 Archivo, sans-serif; color: #dcc07c; }
+  @media (max-width: 899px) {
+    /* sul telefono il pannello è basso, così sopra si vede il pantalone che cambia */
+    .sng-crop { left: 8px; right: 8px; top: auto; bottom: 8px; transform: none; width: auto; max-height: 46svh; gap: 7px; padding: 10px 12px; }
+    .sng-crop__pic img { max-height: 19svh; }
+    .sng-crop__hint, .sng-crop__help { display: none; }
+    .sng-crop__row button { min-height: 34px; }
+    .sng-crop-open { margin-top: 2px; font-size: 10px; }
+  }
+  @keyframes cfgSaveIn { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+
+  /* Schermata con l'immagine creata */
+  .cfg-share { --text: #f7f3de; --muted: rgba(247,243,222,.62); --line: rgba(247,243,222,.14); --btn: #f0ead2; --btn-text: #181511;
+    position: fixed; inset: 0; z-index: 1001; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 18px;
+    padding: 64px 16px max(20px, env(safe-area-inset-bottom)); background: rgba(10,8,6,.92); -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);
+    color: #f7f3de; font: 400 15px/1.5 Archivo, system-ui, sans-serif; opacity: 0; transition: opacity .25s ease; }
+  .cfg-share[hidden] { display: none; }
+  .cfg-share.is-open { opacity: 1; }
+  .cfg-share__back { position: absolute; top: 14px; left: 10px; width: 44px; height: 44px; display: inline-flex; align-items: center; justify-content: center;
+    border: 0; background: none; color: inherit; cursor: pointer; -webkit-tap-highlight-color: transparent; }
+  .cfg-share__back svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; transition: transform .3s ease; }
+  .cfg-share__back:hover svg { transform: translateX(-3px); }
+  .cfg-share__title { position: absolute; top: 22px; left: 0; right: 0; margin: 0; text-align: center; font: 500 18px/1.2 Fraunces, Georgia, serif; pointer-events: none; }
+  .cfg-share__img { display: block; width: 100%; max-width: 960px; max-height: calc(100svh - 260px); object-fit: contain; border-radius: 6px; box-shadow: 0 24px 60px rgba(0,0,0,.6); }
+  .cfg-share__row { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; width: 100%; max-width: 520px; }
+  .cfg-share__row > * { flex: 1 1 200px; margin: 0; text-decoration: none; }
+  .cfg-share__row .cta[hidden] { display: none; }
+  .cfg-share__row .cfg-share__alt { background: transparent; color: var(--text); border-color: rgba(247,243,222,.35); }
+  .cfg-share__note { margin: 0; max-width: 520px; text-align: center; font-size: 13px; color: rgba(247,243,222,.62); }
+  .cfg-share__lead { color: var(--text); font-size: 15px; }
+  .cfg-share__hint:empty { display: none; }
+  .cfg-share__hint { color: var(--text); }
+  .cfg-share__row--small .cta { min-height: 40px; }
+  .cfg-share .cta--ig, .cfg-share .cta--wa { color: #fff; border-color: transparent; letter-spacing: .14em; transition: filter .2s ease, transform .2s ease; }
+  .cfg-share .cta--ig { background: linear-gradient(45deg, #f56040 0%, #e1306c 30%, #c13584 55%, #833ab4 80%, #5851db 100%); }
+  .cfg-share .cta--wa { background: #25d366; }
+  .cfg-share .cta--ig:hover, .cfg-share .cta--wa:hover { filter: brightness(1.08); transform: translateY(-1px); }
+  .cfg-share .cta__ico { width: 20px; height: 20px; flex: none; }
+  .cfg-share__note a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
+  @media (prefers-reduced-motion: reduce) { .cfg-share, .cfg-send, .cfg-send::after { transition: none; animation: none; } }
+  /* 05/11 iPad: i rettangoli del denim riempiono sempre la loro cella. Safari/Chrome su iPad non allargano i <button>
+     nella griglia, così il colore restava una linea sottile staccata dalla scritta. */
+  @media (min-width: 900px) {
+    .families { justify-items: stretch; align-items: stretch; }
+    .fam { width: 100%; height: 100%; min-width: 0; justify-self: stretch; align-self: stretch; -webkit-appearance: none; appearance: none; }
+    .fam__chip { position: absolute; inset: 0; width: auto; height: auto; }
+  }
+  /* Avviso in alto: quando e dove si possono realizzare i pantaloni. Sta sopra il configuratore,
+     che si accorcia da solo (--cfg-top misura dove comincia). */
+  .cfg-avviso { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 6px 22px; margin: 0; padding: 16px 24px;
+    background: linear-gradient(90deg, #070504 0%, #221b14 45%, #5d513f 100%);
+    border-top: 1px solid rgba(214,196,161,.22); border-bottom: 1px solid rgba(214,196,161,.22);
+    color: #f7f3de; font: 500 clamp(17px, 1.45vw, 21px)/1.3 Fraunces, Georgia, serif; letter-spacing: -.005em; text-align: center; }
+  .cfg-avviso__k { display: inline-flex; align-items: center; gap: 10px; color: #d6c4a1; font: 600 13px/1 Archivo, sans-serif; letter-spacing: .24em; text-transform: uppercase; white-space: nowrap; }
+  .cfg-avviso__k::before { content: ''; width: 7px; height: 7px; border-radius: 50%; background: #d6c4a1; box-shadow: 0 0 0 4px rgba(214,196,161,.18); }
+  html.sngx-sole .cfg-avviso { color: #1f1a14; background: #efe8d6; border-color: rgba(86,77,57,.2); }
+  html.sngx-sole .cfg-avviso__k { color: #564d39; }
+  html.sngx-sole .cfg-avviso__k::before { background: #564d39; box-shadow: 0 0 0 4px rgba(86,77,57,.15); }
+  @media (max-width: 899px) {
+    .cfg-avviso { gap: 5px 10px; padding: 10px 14px; font-size: 15px; line-height: 1.3; }
+    .cfg-avviso__k { gap: 8px; font-size: 11px; letter-spacing: .18em; }
+    .cfg-avviso__k::before { width: 6px; height: 6px; }
+  }
+</style>
+
+<main class="cfg">
+  <header class="cfg__head">
+    <div>
+      <p class="cfg__eyebrow">Su misura<span class="cfg__eyebrow-more"> · il nostro capo con l'inserto di seta base</span></p>
+      <h1 class="cfg__title">Crea il tuo pantalone</h1>
+    </div>
+    <div class="cfg__views" role="group" aria-label="Vista">
+      <button type="button" data-view="davanti" aria-pressed="true">Davanti</button>
+      <button type="button" data-view="dietro" aria-pressed="false">Dietro</button>
+    </div>
+  </header>
+
+  <div class="cfg__stage">
+    <div class="cfg__photo is-loading" id="photo"><canvas id="canvas" aria-label="Foto del pantalone con il colore scelto"></canvas></div>
+    <p class="cfg__hint" id="hint">Tocca la foto per ingrandire il tessuto</p>
+  </div>
+
+  <div class="cfg__sheet" id="cfg-sheet" data-step="denim">
+  <div class="cfg__tabs" role="tablist" aria-label="Passaggi">
+    <button class="cfg__tab" type="button" role="tab" data-step="denim" aria-controls="step-family" aria-selected="true"><span class="cfg__tab-n"><b>01</b>Denim</span><span class="cfg__tab-v" id="tab-denim">Scegli</span></button>
+    <button class="cfg__tab" type="button" role="tab" data-step="ins" aria-controls="step-insert" aria-selected="false" disabled><span class="cfg__tab-n"><b>02</b>Seta</span><span class="cfg__tab-v" data-mirror="pick-insert">Seta Avio</span></button>
+    <button class="cfg__tab" type="button" role="tab" data-step="emb" aria-controls="step-emb" aria-selected="false" disabled><span class="cfg__tab-n"><b>03</b>Ricamo</span><span class="cfg__tab-v" id="tab-emb">S’N’G</span></button>
+  </div>
+
+  <section class="side side--fam" id="step-family" aria-labelledby="t-fam">
+    <div class="side__label">
+      <span class="side__num">01</span>
+      <h2 class="side__title" id="t-fam">Denim</h2>
+      <span class="side__pick" id="pick-family">Scegli</span>
+    </div>
+    <div class="families" id="families"></div>
+  </section>
+
+  <section class="side side--shade" id="step-shade" aria-disabled="true" aria-labelledby="t-shade">
+    <div class="side__label">
+      <span class="side__num">01</span>
+      <h2 class="side__title" id="t-shade">Tonalità</h2>
+      <span class="side__pick" id="pick-shade">—</span>
+    </div>
+    <p class="side__note" id="shade-note">Scegli prima il colore.</p>
+    <div class="shades tone" id="shades">
+      <div class="tone__row">
+        <span class="tone__label" aria-hidden="true">Tonalità</span>
+        <span class="tone__preview" id="tone-preview" aria-hidden="true"></span>
+        <div class="tone__track">
+          <input type="range" id="tone" min="0" max="100" step="1" value="50" disabled aria-label="Tonalità del lavaggio, da chiaro a scuro">
+          <div class="tone__stops" id="tone-stops"></div>
+        </div>
+      </div>
+      <div class="tone__ends"><span>Chiaro</span><span>Scuro</span></div>
+    </div>
+  </section>
+
+  <section class="side side--ins" id="step-insert" aria-disabled="true" aria-labelledby="t-ins">
+    <div class="side__label">
+      <span class="side__num">02</span>
+      <h2 class="side__title" id="t-ins">Seta</h2>
+      <span class="side__pick" id="pick-insert">Seta Avio</span>
+    </div>
+    <p class="side__note">Puoi scegliere la seta qui, oppure dal vivo: scrivici su Instagram. Dopo una settimana il tuo pantalone è pronto, con la seta che hai scelto.</p>
+    <div class="silks" id="silks"></div>
+    <p class="side__note side__note--short">Puoi sceglierle anche dal vivo, scrivici su Instagram.</p>
+  </section>
+
+  <section class="side side--emb" id="step-emb" aria-labelledby="t-emb">
+    <div class="side__label">
+      <span class="side__num">03</span>
+      <h2 class="side__title" id="t-emb">Ricamo</h2>
+      <span class="side__pick" id="pick-emb">S’N’G · Palazzi Generici</span>
+    </div>
+    <div class="emb">
+      <div class="emb__switch" role="group" aria-label="Ricamo">
+        <button type="button" data-emb="on" aria-pressed="true">Con ricamo</button>
+        <button type="button" data-emb="off" aria-pressed="false">Senza</button>
+      </div><div class="emb__threads" role="group" aria-label="Filo da colorare">
+        <button type="button" class="emb__thread" data-thread="0" aria-pressed="true"><i class="emb__dot" id="emb-c1"></i>S’N’G</button>
+        <button type="button" class="emb__thread" data-thread="1" aria-pressed="false"><i class="emb__dot" id="emb-c2"></i>Palazzi Generici</button>
+        <button type="button" class="emb__swap" id="emb-swap" aria-label="Scambia i colori dei due fili" title="Scambia i colori">⇄</button>
+      </div>
+      <div class="emb__palette" id="emb-palette" role="group" aria-label="Colore del filo"></div>
+      <button type="button" class="emb__reset" id="emb-reset" hidden>Torna ai colori della seta</button>
+      <p class="side__note emb__note">Tocca una scritta, poi scegli il colore del filo. All’inizio i fili prendono i colori della seta.</p>
+    </div>
+  </section>
+
+  <p class="cfg__phase" aria-live="polite"><span class="cfg__phase-n" id="cfg-phase-n">Fase 1</span><span class="cfg__phase-t" id="cfg-phase-t">Scelta del denim</span></p><style>
+    .cfg__photosw { display: flex; width: max-content; padding: 3px; border-radius: 99px; background: rgba(0,0,0,.32); border: 1px solid rgba(247,243,222,.12); position: relative; z-index: 5; }
+    .cfg__photosw button { flex: none; border: 0; border-radius: 99px; background: transparent; color: var(--muted); padding: 7px 12px; cursor: pointer; white-space: nowrap;
+      font: 600 10px/1 Archivo, sans-serif; letter-spacing: .12em; text-transform: uppercase; transition: background-color .2s, color .2s; -webkit-tap-highlight-color: transparent; }
+    .cfg__photosw button[aria-pressed="true"] { background: var(--btn); color: var(--btn-text); }
+    .cfg__photosw button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+    @media (min-width: 900px) { .cfg__photosw { grid-area: phase; justify-self: end; align-self: start; margin: 82px 28px 0 0; } }
+    @media (min-width: 900px) and (max-width: 1180px) { .cfg__photosw { margin-right: 20px; } }
+    @media (max-width: 899px) { .cfg__stage.has-photosw { position: relative; } .cfg__stage .cfg__photosw { position: absolute; top: 40px; right: 10px; } .cfg__photosw button { padding: 6px 10px; font-size: 9px; } }
+  </style><div class="cfg__nav">
+    <button class="cfg__prev" type="button" data-for="ins" data-prev="denim"><span aria-hidden="true">&larr;</span> Fase precedente</button>
+    <button class="cfg__prev" type="button" data-for="emb" data-prev="ins"><span aria-hidden="true">&larr;</span> Fase precedente</button>
+    <button class="cfg__next" type="button" data-for="denim" data-next="ins" disabled><span class="cfg__next-wait">Scegli il denim</span><span class="cfg__next-go">Scegli la seta</span><span class="cfg__next-arrow" aria-hidden="true">&rarr;</span></button>
+    <button class="cfg__next" type="button" data-for="ins" data-next="emb"><span class="cfg__next-go">Fase successiva</span><span class="cfg__next-arrow" aria-hidden="true">&rarr;</span></button>
+    <button class="cfg-send" type="button" data-for="emb" data-cfg-save><span class="cfg-send__t">Salva e inviaci il tuo pantalone</span><span class="cfg-send__s">per iniziare la creazione</span><svg class="cfg-send__ico" viewBox="0 0 20 20" aria-hidden="true"><path d="M17.5 2.5 8.6 11.4M17.5 2.5l-5.6 15-3.3-6.1-6.1-3.3z"/></svg></button>
+  </div>
+
+  <footer class="cfg__foot">
+    <dl class="summary">
+      <div><dt>Modello</dt><dd>Dritto</dd></div>
+      <div><dt>Colore</dt><dd id="sum-family">—</dd></div>
+      <div><dt>Tonalità</dt><dd id="sum-shade">—</dd></div>
+      <div><dt>Seta</dt><dd id="sum-insert">Avio</dd></div>
+      <div><dt>Ricamo</dt><dd id="sum-emb">S’N’G</dd></div>
+    </dl>
+  </footer>
+  </div>
+</main><div class="cfg-share" id="cfg-share" role="dialog" aria-modal="true" aria-labelledby="cfg-share-title" hidden>
+  <button class="cfg-share__back" type="button" data-close aria-label="Torna indietro"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M12.5 4.5 7 10l5.5 5.5"/></svg></button>
+  <p class="cfg-share__title" id="cfg-share-title">Il tuo pantalone</p>
+  <img class="cfg-share__img" id="cfg-share-img" alt="Il pantalone che hai creato, con colore e seta scelti"><p class="cfg-share__note cfg-share__lead">Mandacelo in DM: ti rispondiamo noi.</p>
+  <div class="cfg-share__row">
+    <button class="cta cta--ig" type="button" id="cfg-dm-ig"><svg class="cta__ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5.5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.4" cy="6.6" r="1.3" fill="currentColor"/></svg>Instagram</button><button class="cta cta--wa" type="button" id="cfg-dm-wa"><svg class="cta__ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8a9.2 9.2 0 0 0-7.9 13.9L3 21l4.4-1.1A9.2 9.2 0 1 0 12 2.8z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/><path d="M9.1 7.6c-.3 0-.7.1-1 .5-.3.4-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.2 5 4.3 2.4.9 2.9.7 3.5.7.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3l-1.9-.9c-.3-.1-.5-.1-.7.1l-.9 1.1c-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.2-1.4-.8-.7-1.4-1.6-1.5-1.9-.2-.3 0-.4.1-.6l.5-.6c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.1c-.2-.5-.4-.5-.6-.5h-.5z" fill="currentColor"/></svg>WhatsApp</button></div>
+  <p class="cfg-share__note cfg-share__hint" id="cfg-dm-hint" aria-live="polite"></p>
+  <div class="cfg-share__row cfg-share__row--small">
+    <a class="cta cfg-share__alt" id="cfg-share-dl" href="#" download>Salva</a>
+    <button class="cta cfg-share__alt" type="button" id="cfg-share-go">Invia ad altri</button>
+  </div>
+</div>
+
+<script id="cfg-data" type="application/json">
+{
+  "ig": "sng_silkandgrit",
+  "wa": "393665235054",
+  "views": {
+    "davanti": { "photo": "a/sng-cfg-davanti.jpg", "shape": "a/sng-cfg-davanti-sagoma.png", "shape1": "a/sng-cfg-davanti-sagoma1.png", "stretch1": 1.07, "mask": "a/sng-cfg-davanti-maschera.png", "y0": 0.04319, "swatch": [294, 702, 170, 170],
+                 "emb": { "ox": 405, "oy": 415.6, "angle": 0.218, "w1": 39.5, "w2": 89.6, "c1": 48.5, "gap": 9, "h1": 12 },
+                 "bands": { "map": "a/sng-cfg-davanti-bande.png", "pxCm": 10.863, "list": [ { "id": 1, "ox": 328.8, "oy": 418, "angle": -0.2726 }, { "id": 2, "ox": 878.6, "oy": 454, "angle": 0.2616 } ] } },
+    "dietro":  { "photo": "a/sng-cfg-dietro.jpg",  "shape": "a/sng-cfg-dietro-sagoma.png", "shape1": "a/sng-cfg-dietro-sagoma1.png", "stretch1": 1.07,  "mask": "a/sng-cfg-dietro-maschera.png",  "y0": 0.03924,
+                 "bands": { "map": "a/sng-cfg-dietro-bande.png", "pxCm": 9.931, "list": [ { "id": 1, "ox": 296.5, "oy": 445, "angle": -0.195 }, { "id": 2, "ox": 915.8, "oy": 482, "angle": 0.1406 } ] } },
+    "ricamo":  { "photo": "a/sng-cfg-ricamo.jpg", "shape": "a/sng-cfg-ricamo-sagoma.png", "mask": "a/sng-cfg-ricamo-maschera.png", "y0": 0.11563,
+                 "fili": "a/sng-cfg-ricamo-fili.png", "filiRef": [0.95626, 0.58937],
+                 "senza": { "img": "a/sng-cfg-ricamo-senza.png", "rect": [490, 795, 370, 140] },
+                 "embC": [676, 872], "embW": 318,
+                 "bands": { "map": "a/sng-cfg-ricamo-bande.png", "pxCm": 38, "list": [ { "id": 1, "ox": 290, "oy": 883, "angle": -0.25 } ] } },
+    "davanti-grigio": { "real": true, "photo": "a/sng-cfg-davanti-grigio.jpg", "shape": "a/sng-cfg-davanti-grigio-sagoma.png", "mask": "a/sng-cfg-davanti-grigio-maschera.png", "y0": 0.17631, "swatch": [329, 821, 154, 154],
+                 "emb": {"ox": 437.1, "oy": 279.1, "angle": 0.218, "w1": 53.0, "w2": 120.2, "c1": 65.1, "gap": 12.1, "h1": 16.1},
+                 "bands": { "map": "a/sng-cfg-davanti-grigio-bande.png", "pxCm": 14.658, "list": [{"id": 1, "ox": 376.1, "oy": 277, "angle": 0.2752}, {"id": 2, "ox": 1045.4, "oy": 275, "angle": -0.2568}] } },
+    "davanti-blu": { "real": true, "photo": "a/sng-cfg-davanti-blu.jpg", "shape": "a/sng-cfg-davanti-blu-sagoma.png", "mask": "a/sng-cfg-davanti-blu-maschera.png", "y0": 0.02541, "swatch": [355, 821, 145, 145],
+                 "emb": {"ox": 466.3, "oy": 279.7, "angle": 0.218, "w1": 50.2, "w2": 113.8, "c1": 61.6, "gap": 11.4, "h1": 15.2},
+                 "bands": { "map": "a/sng-cfg-davanti-blu-bande.png", "pxCm": 13.761, "list": [{"id": 1, "ox": 382.4, "oy": 238, "angle": 0.2489}, {"id": 2, "ox": 1028.7, "oy": 229, "angle": -0.257}] } },
+    "davanti-bianco": { "real": true, "photo": "a/sng-cfg-davanti-bianco.jpg", "shape": "a/sng-cfg-davanti-bianco-sagoma.png", "mask": "a/sng-cfg-davanti-bianco-maschera.png", "y0": 0.65947, "swatch": [348, 821, 146, 146],
+                 "emb": {"ox": 462.0, "oy": 280.5, "angle": 0.218, "w1": 50.4, "w2": 114.4, "c1": 61.9, "gap": 11.5, "h1": 15.3},
+                 "bands": { "map": "a/sng-cfg-davanti-bianco-bande.png", "pxCm": 13.87, "list": [{"id": 1, "ox": 377.1, "oy": 272, "angle": 0.2551}, {"id": 2, "ox": 1040.6, "oy": 262, "angle": -0.2476}] } },
+    "davanti-nero": { "real": true, "photo": "a/sng-cfg-davanti-nero.jpg", "shape": "a/sng-cfg-davanti-nero-sagoma.png", "mask": "a/sng-cfg-davanti-nero-maschera.png", "y0": 0.01417, "swatch": [345, 821, 153, 153],
+                 "emb": {"ox": 457.5, "oy": 279.2, "angle": 0.218, "w1": 52.6, "w2": 119.3, "c1": 64.6, "gap": 12.0, "h1": 16.0},
+                 "bands": { "map": "a/sng-cfg-davanti-nero-bande.png", "pxCm": 14.427, "list": [{"id": 1, "ox": 381.5, "oy": 293, "angle": 0.2721}, {"id": 2, "ox": 1031.7, "oy": 286, "angle": -0.2768}] } },
+    "davanti-azzurro": { "real": true, "photo": "a/sng-cfg-davanti-azzurro.jpg", "shape": "a/sng-cfg-davanti-azzurro-sagoma.png", "mask": "a/sng-cfg-davanti-azzurro-maschera.png", "y0": 0.20405, "swatch": [338, 821, 142, 142],
+                 "emb": {"ox": 437.0, "oy": 281.2, "angle": 0.218, "w1": 49.0, "w2": 111.2, "c1": 60.2, "gap": 11.2, "h1": 14.9},
+                 "bands": { "map": "a/sng-cfg-davanti-azzurro-bande.png", "pxCm": 14.185, "list": [{"id": 1, "ox": 372.0, "oy": 269, "angle": 0.2562}, {"id": 2, "ox": 1033.3, "oy": 274, "angle": -0.2189}] } },
+    "davanti-grigio-sin": { "real": true, "photo": "a/sng-cfg-davanti-grigio-sin.jpg", "shape": "a/sng-cfg-davanti-grigio-sin-sagoma.png", "mask": "a/sng-cfg-davanti-grigio-sin-maschera.png", "y0": 0.24701, "swatch": [369, 827, 146, 146],
+                 "emb": {"ox": 475.7, "oy": 336.7, "angle": 0.218, "w1": 50.4, "w2": 114.3, "c1": 61.9, "gap": 11.5, "h1": 15.3},
+                 "bands": { "map": "a/sng-cfg-davanti-grigio-sin-bande.png", "pxCm": 14.658, "list": [] } },
+    "davanti-blu-sin": { "real": true, "photo": "a/sng-cfg-davanti-blu-sin.jpg", "shape": "a/sng-cfg-davanti-blu-sin-sagoma.png", "mask": "a/sng-cfg-davanti-blu-sin-maschera.png", "y0": 0.04883, "swatch": [364, 834, 151, 151],
+                 "emb": {"ox": 472.0, "oy": 326.6, "angle": 0.218, "w1": 52.2, "w2": 118.4, "c1": 64.1, "gap": 11.9, "h1": 15.9},
+                 "bands": { "map": "a/sng-cfg-davanti-blu-sin-bande.png", "pxCm": 13.761, "list": [] } },
+    "davanti-bianco-sin": { "real": true, "photo": "a/sng-cfg-davanti-bianco-sin.jpg", "shape": "a/sng-cfg-davanti-bianco-sin-sagoma.png", "mask": "a/sng-cfg-davanti-bianco-sin-maschera.png", "y0": 0.67142, "swatch": [342, 839, 156, 156],
+                 "emb": {"ox": 455.6, "oy": 315.8, "angle": 0.218, "w1": 53.7, "w2": 121.8, "c1": 65.9, "gap": 12.2, "h1": 16.3},
+                 "bands": { "map": "a/sng-cfg-davanti-bianco-sin-bande.png", "pxCm": 13.87, "list": [] } },
+    "davanti-nero-sin": { "real": true, "photo": "a/sng-cfg-davanti-nero-sin.jpg", "shape": "a/sng-cfg-davanti-nero-sin-sagoma.png", "mask": "a/sng-cfg-davanti-nero-sin-maschera.png", "y0": 0.0215, "swatch": [381, 825, 145, 145],
+                 "emb": {"ox": 485.3, "oy": 336.9, "angle": 0.218, "w1": 50.2, "w2": 113.8, "c1": 61.6, "gap": 11.4, "h1": 15.2},
+                 "bands": { "map": "a/sng-cfg-davanti-nero-sin-bande.png", "pxCm": 14.427, "list": [] } },
+    "davanti-azzurro-sin": { "real": true, "photo": "a/sng-cfg-davanti-azzurro-sin.jpg", "shape": "a/sng-cfg-davanti-azzurro-sin-sagoma.png", "mask": "a/sng-cfg-davanti-azzurro-sin-maschera.png", "y0": 0.42066, "swatch": [311, 860, 160, 160],
+                 "emb": {"ox": 427.1, "oy": 323.7, "angle": 0.218, "w1": 55.2, "w2": 125.3, "c1": 67.8, "gap": 12.6, "h1": 16.8},
+                 "bands": { "map": "a/sng-cfg-davanti-azzurro-sin-bande.png", "pxCm": 14.185, "list": [] } }
+  },
+  "silks": [
+    { "c1": "#d0619a", "c2": "#f0a8cf", "code": "SG-1", "name": "Jacquard fucsia a fogliami", "type": "Jacquard", "color": "Magenta", "pants": 9, "order": 1, "photo": "a/sng-seta-sg1.jpg", "crop": "" },
+    { "c1": "#6f93b0", "c2": "#d4c9b8", "code": "SG-10", "name": "Damasco azzurro e beige", "type": null, "color": "Azzurro polvere", "pants": 3, "order": 10, "photo": "a/sng-seta-8766.jpg", "crop": "" },
+    { "c1": "#4f6b8f", "c2": "#c9b98a", "code": "SG-11", "name": "Cachemire blu su fondo chiaro", "type": null, "color": "Avio", "pants": 1, "order": 11, "photo": "a/sng-seta-8767.jpg", "crop": "" },
+    { "c1": "#4a3a34", "c2": "#c9a6a0", "code": "SG-13", "name": "Astratto marrone scuro e rosa", "type": null, "color": "Caffè", "pants": 3, "order": 13, "photo": "a/sng-seta-8772.jpg", "crop": "" },
+    { "c1": "#d9c27a", "c2": "#8f9a95", "code": "SG-14", "name": "Nero con foglie e animali dorati", "type": null, "color": "Nero", "pants": 2, "order": 14, "photo": "a/sng-seta-8773.jpg", "crop": "" },
+    { "c1": "#c0553f", "c2": "#efd9c4", "code": "SG-15", "name": "Acquerello pesca e ruggine", "type": null, "color": "Pesca", "pants": 1, "order": 15, "photo": "a/sng-seta-8774.jpg", "crop": "" },
+    { "c1": "#2f5fb8", "c2": "#c9ab6a", "code": "SG-16", "name": "Damasco blu elettrico e oro", "type": null, "color": "Blu cobalto", "pants": 1, "order": 16, "photo": "a/sng-seta-8775.jpg", "crop": "" },
+    { "c1": "#7a6656", "c2": "#e6dccd", "code": "SG-17", "name": "Greca tortora e panna", "type": null, "color": "Tortora", "pants": 4, "order": 17, "photo": "a/sng-seta-8776.jpg", "crop": "" },
+    { "c1": "#3a3a40", "c2": "#d8d0c4", "code": "SG-18", "name": "Tigrato grigio e nero", "type": null, "color": "Grigio antracite", "pants": 2, "order": 18, "photo": "a/sng-seta-8777.jpg", "crop": "" },
+    { "c1": "#e14f98", "c2": "#f0a8cf", "code": "SG-19", "name": "Jacquard fucsia a fogliami (scuro)", "type": "Jacquard", "color": "Fucsia", "pants": 4, "order": 19, "photo": "a/sng-seta-8770.jpg", "crop": "" },
+    { "c1": "#e8892e", "c2": "#e8c28a", "code": "SG-20", "name": "Jacquard arancio a fogliami", "type": "Jacquard", "color": "Arancio", "pants": 7, "order": 20, "photo": "a/sng-seta-8771.jpg", "crop": "" },
+    { "c1": "#2f8a3c", "c2": "#8fbf5a", "code": "SG-21", "name": "Damasco verde smeraldo", "type": null, "color": "Verde smeraldo", "pants": 2, "order": 21, "photo": "a/sng-seta-damasco-verde.jpg", "crop": "" },
+    { "c1": "#a8531f", "c2": "#e8c27a", "code": "SG-22", "name": "Farfalle su verde salvia", "type": null, "color": "Verde salvia", "pants": 3, "order": 22, "photo": "a/sng-seta-farfalle-salvia.jpg", "crop": "" },
+    { "c1": "#8a5a6e", "c2": "#e6c9bf", "code": "SG-23", "name": "Damasco rosa antico e malva", "type": null, "color": "Rosa antico", "pants": 2, "order": 23, "photo": "a/sng-seta-damasco-rosa-antico.jpg", "crop": "" },
+    { "c1": "#2a7f8c", "c2": "#e2d6bc", "code": "SG-24", "name": "Damasco ottanio con uccelli", "type": null, "color": "Petrolio", "pants": 4, "order": 24, "photo": "a/sng-seta-damasco-ottanio-uccelli.jpg", "crop": "" },
+    { "c1": "#d9d4cc", "c2": "#2e4f7a", "code": "SG-25", "name": "Jacquard blu a fogliami", "type": "Jacquard", "color": "Blu navy", "pants": null, "order": 25, "photo": "a/sng-seta-jacquard-blu.jpg", "crop": "" },
+    { "c1": "#a9d0dc", "c2": "#3f7f9a", "code": "SG-26", "name": "Jacquard azzurro a fogliami", "type": "Jacquard", "color": "Azzurro cielo", "pants": null, "order": 26, "photo": "a/sng-seta-jacquard-azzurro.jpg", "crop": "" },
+    { "c1": "#6fc06d", "c2": "#1f6b25", "code": "SG-4", "name": "Seta Verde smeraldo", "type": null, "color": "Verde smeraldo", "pants": 4, "order": 4, "photo": "a/sng-seta-sg4.jpg", "crop": "" },
+    { "c1": "#6f80a6", "c2": "#d1c58f", "code": "SG-5", "name": "Seta Avio", "type": null, "color": "Avio", "pants": 2, "order": 5, "photo": "a/sng-seta-sg5.jpg", "crop": "" },
+    { "c1": "#6f9a36", "c2": "#a9c88a", "code": "SG-6", "name": "Seta Verde oliva", "type": null, "color": "Verde oliva", "pants": 9, "order": 6, "photo": "a/sng-seta-sg6.jpg", "crop": "" },
+    { "c1": "", "c2": "", "code": "SG-7", "name": "007", "type": null, "color": "Grigio cenere", "pants": 20, "order": 7, "photo": "a/sng-seta-sg7.jpg", "crop": "" },
+    { "c1": "", "c2": "", "code": "SG-8", "name": "008", "type": null, "color": "Rosso corallo", "pants": 2, "order": 8, "photo": "a/sng-seta-sg8.jpg", "crop": "" },
+    { "c1": "", "c2": "", "code": "SG-9", "name": "009", "type": null, "color": "Arancio", "pants": 18, "order": 9, "photo": "a/sng-seta-sg9.jpg", "crop": "" }
+  ],
+  "families": [
+    { "id": "blu", "views": { "davanti": "davanti-blu", "davanti1": "davanti-blu-sin" }, "chip": "a/sng-cfg-fam-blu.jpg", "name": "Blu", "shades": [
+      { "id": "blu-grezzo", "name": "Indaco grezzo", "hex": "#18233a" },
+      { "id": "blu-scuro",  "name": "Blu scuro",     "hex": "#2a3b58" },
+      { "id": "blu-medio",  "name": "Blu medio",     "hex": "#455b7d" }
+    ] },
+    { "id": "azzurro", "views": { "davanti": "davanti-azzurro", "davanti1": "davanti-azzurro-sin" }, "chip": "a/sng-cfg-fam-azzurro.jpg", "name": "Azzurro", "shades": [
+      { "id": "azz-medio",   "name": "Azzurro medio",   "hex": "#5f7591" },
+      { "id": "azz-chiaro",  "name": "Azzurro chiaro",  "hex": "#7891a7" },
+      { "id": "azz-slavato", "name": "Azzurro slavato", "hex": "#97a8b5" }
+    ] },
+    { "id": "grigio", "views": { "davanti": "davanti-grigio", "davanti1": "davanti-grigio-sin" }, "chip": "a/sng-cfg-fam-grigio.jpg", "name": "Grigio", "shades": [
+      { "id": "gr-antracite", "name": "Antracite",     "hex": "#43464c" },
+      { "id": "gr-medio",     "name": "Grigio medio",  "hex": "#6a6d74" },
+      { "id": "gr-chiaro",    "name": "Grigio chiaro", "hex": "#9a9ca2" }
+    ] },
+    { "id": "nero", "views": { "davanti": "davanti-nero", "davanti1": "davanti-nero-sin" }, "chip": "a/sng-cfg-fam-nero.jpg", "name": "Nero", "shades": [
+      { "id": "nero-pieno",   "name": "Nero pieno",   "hex": "#151517" },
+      { "id": "nero-slavato", "name": "Nero slavato", "hex": "#2b2b30" },
+      { "id": "nero-stinto",  "name": "Nero stinto",  "hex": "#3d3e44" }
+    ] }
+  ]
+}
+</script>
+
+<script>
+  // Pannello a schede sul telefono: quale passaggio si vede, il valore scelto sotto ogni scheda,
+  // e l'altezza del configuratore, che occupa lo schermo sotto il menu.
+  (function () {
+    var main = document.querySelector('main.cfg'), sheet = document.getElementById('cfg-sheet');
+    var tabs = sheet.querySelectorAll('.cfg__tab');
+    var PHASES = { denim: ['Fase 1', 'Scelta del denim'], ins: ['Fase 2', 'Scelta della seta'], emb: ['Fase 3', 'Il ricamo'] };
+    function go(step) {
+      sheet.dataset.step = step;
+      tabs.forEach(function (t) { t.setAttribute('aria-selected', String(t.dataset.step === step)); });
+      var ph = PHASES[step]; document.getElementById('cfg-phase-n').textContent = ph[0]; document.getElementById('cfg-phase-t').textContent = ph[1];
+    }
+    sheet.querySelectorAll('.cfg__prev').forEach(function (b) {
+      b.addEventListener('click', function () { var t = sheet.querySelector('.cfg__tab[data-step="' + b.dataset.prev + '"]'); if (t) t.click(); });
+    });
+    tabs.forEach(function (t) { t.addEventListener('click', function () { if (!t.disabled) go(t.dataset.step); }); });
+    // 01 Denim viene prima: Seta e Ricamo si aprono solo dopo aver scelto il colore del denim
+    var ins = document.getElementById('step-insert');
+    function unlock() {
+      if (ins.getAttribute('aria-disabled') === 'true') return;
+      main.classList.add('cfg--denim');
+      tabs.forEach(function (t) { t.disabled = false; });
+      sheet.querySelectorAll('.cfg__next').forEach(function (b) { b.disabled = false; });
+    }
+    new MutationObserver(unlock).observe(ins, { attributes: true, attributeFilter: ['aria-disabled'] });
+    sheet.querySelectorAll('.cfg__next').forEach(function (b) {
+      b.addEventListener('click', function () {
+        var t = sheet.querySelector('.cfg__tab[data-step="' + b.dataset.next + '"]');
+        if (t) t.click();
+        var top = sheet.getBoundingClientRect().top; if (top < 0) sheet.scrollIntoView({ block: 'start', behavior: 'smooth' });
+      });
+    });
+    sheet.querySelectorAll('[data-mirror]').forEach(function (el) {
+      var src = document.getElementById(el.dataset.mirror);
+      new MutationObserver(function () { el.textContent = src.textContent; }).observe(src, { childList: true, characterData: true, subtree: true });
+    });
+    // la freccia porta sempre alla hero della home (non alle capsule né alla sezione Crea)
+    // il configuratore occupa esattamente lo schermo che resta sotto la barra degli annunci e il menu
+    function fit() { main.style.setProperty('--cfg-top', Math.max(0, main.getBoundingClientRect().top + window.scrollY) + 'px'); }
+    fit(); window.addEventListener('resize', fit); window.addEventListener('load', fit);
+  })();
+</script>
+
+<script type="module" src="a/sng-cfg.js"></script>
+
+</section><div id="shopify-section-template--33186276606297__fase-indietro" class="shopify-section sngx-cfg-fase-indietro"><style>
+  .cfg__title-t[hidden], .cfg__headprev[hidden] { display: none !important; }
+  .cfg__headprev { display: inline-flex; align-items: center; gap: .28em; margin: 0; padding: 0; border: 0; background: none; color: inherit; cursor: pointer;
+    font: inherit; letter-spacing: inherit; line-height: inherit; white-space: nowrap; text-align: left; -webkit-tap-highlight-color: transparent; }
+  .cfg__headprev svg { flex: none; width: .66em; height: .66em; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; opacity: .75; transition: transform .3s ease, opacity .3s ease; }
+  .cfg__headprev:hover svg { transform: translateX(-4px); opacity: 1; }
+  .cfg__headprev:focus-visible { outline: 2px solid var(--accent, #dcc07c); outline-offset: 4px; border-radius: 4px; }
+  .cfg .cfg__nav .cfg__prev { display: none !important; }
+</style>
+<script>
+  (function () {
+    var main = document.querySelector('main.cfg'), sheet = document.getElementById('cfg-sheet');
+    var h = main && main.querySelector('.cfg__title');
+    if (!sheet || !h || h.querySelector('.cfg__headprev')) return;
+    var t = document.createElement('span'); t.className = 'cfg__title-t';
+    Array.prototype.slice.call(h.childNodes).forEach(function (n) { t.appendChild(n); });
+    h.appendChild(t);
+    var b = document.createElement('button'); b.type = 'button'; b.className = 'cfg__headprev'; b.hidden = true;
+    b.innerHTML = '<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M12.5 4.5 7 10l5.5 5.5"/></svg>Fase precedente';
+    h.appendChild(b);
+    var PREV = { ins: 'denim', emb: 'ins' };
+    function sync() { var p = PREV[sheet.dataset.step]; b.hidden = !p; t.hidden = !!p; b.dataset.prev = p || ''; }
+    b.addEventListener('click', function () { var tab = sheet.querySelector('.cfg__tab[data-step="' + b.dataset.prev + '"]'); if (tab) tab.click(); });
+    new MutationObserver(sync).observe(sheet, { attributes: true, attributeFilter: ['data-step'] });
+    sync();
+  })();
+</script>
+
+
+</div>
+</main>
+<div class="off-update" id="off-update" hidden><span>Nuova versione disponibile</span><button type="button" id="off-update-go">Aggiorna</button></div>
+<script>
+// Versione offline: salva tutto sul dispositivo (service worker) e avvisa quando c'è una versione nuova.
+(function () {
+  if (!('serviceWorker' in navigator) || location.protocol === 'file:') return;
+  var bar = document.getElementById('off-update'), go = document.getElementById('off-update-go');
+  var reloading = false;
+  navigator.serviceWorker.addEventListener('controllerchange', function () { if (reloading) return; reloading = true; location.reload(); });
+  function offer(worker) {
+    bar.hidden = false;
+    go.onclick = function () { go.disabled = true; go.textContent = '…'; worker.postMessage('skipWaiting'); };
+  }
+  navigator.serviceWorker.register('sw.js', { updateViaCache: 'none' }).then(function (reg) {
+    if (reg.waiting && navigator.serviceWorker.controller) offer(reg.waiting);
+    reg.addEventListener('updatefound', function () {
+      var w = reg.installing; if (!w) return;
+      w.addEventListener('statechange', function () {
+        // prima installazione: nessun avviso; aggiornamento: avviso
+        if (w.state === 'installed' && navigator.serviceWorker.controller) offer(w);
+      });
+    });
+    // controlla se c'è una versione nuova a ogni apertura e quando l'app torna in primo piano
+    function check() { if (navigator.onLine) reg.update().catch(function () {}); }
+    document.addEventListener('visibilitychange', function () { if (!document.hidden) check(); });
+    window.addEventListener('online', check);
+  }).catch(function () {});
+})();
+
+</script>
+</body>
+</html>
