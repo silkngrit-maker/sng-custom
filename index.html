@@ -11,6 +11,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <meta name="apple-mobile-web-app-title" content="S'N'G Custom">
 <link rel="manifest" href="manifest.webmanifest">
+<script>/* strumento "Inquadra la seta" sempre attivo nell'app offline */try{localStorage.setItem('sng-inquadra','1')}catch(e){}</script>
 <link rel="icon" href="icons/icon-192.png">
 <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
 <style data-shopify>
@@ -686,6 +687,8 @@ html .cfg-send, html .cfg-share, html .cfg-avviso, html .cfg__back { display: no
 .off-update[hidden] { display: none; }
 .off-update button { border: 0; border-radius: 99px; padding: 9px 16px; background: #f0ead2; color: #181511; cursor: pointer;
   font: 600 11px/1 Archivo, sans-serif; letter-spacing: .14em; text-transform: uppercase; }
+/* "Inquadra la seta": niente istruzioni per Shopify nell'app offline */
+html .sng-crop__help, html .sng-crop__code, html .sng-crop [data-copy] { display: none !important; }
 
 </style>
 </head>

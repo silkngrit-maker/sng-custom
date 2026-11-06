@@ -1,6 +1,6 @@
 // Service worker della versione offline del configuratore S'N'G.
 // Ogni pubblicazione cambia VERSION: il telefono scarica i file nuovi e poi mostra "Nuova versione disponibile".
-const VERSION = '20261106-01359ac6';
+const VERSION = '20261106-c2bea398';
 const CACHE = 'sng-cfg-' + VERSION;
 const FILES = [
  "./",
