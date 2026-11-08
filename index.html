@@ -689,6 +689,10 @@ html .cfg-send, html .cfg-share, html .cfg-avviso, html .cfg__back { display: no
   font: 600 11px/1 Archivo, sans-serif; letter-spacing: .14em; text-transform: uppercase; }
 /* "Inquadra la seta": niente istruzioni per Shopify nell'app offline */
 html .sng-crop__help, html .sng-crop__code, html .sng-crop [data-copy] { display: none !important; }
+/* iPad vecchi (Safari < 15): niente aspect-ratio -> riquadri delle sete e dei denim con altezza da padding */
+@supports not (aspect-ratio: 1) {
+  html .silk__chip { height: 0 !important; padding-bottom: 75%; }
+}
 
 </style>
 </head>
@@ -729,7 +733,7 @@ html .sng-crop__help, html .sng-crop__code, html .sng-crop [data-copy] { display
 
     /* La foto ha tutto lo spazio tra il titolo e il pannello: il pantalone si vede sempre intero */
     .cfg__stage { grid-area: auto; grid-row: 2; grid-column: 1; }
-    .cfg__photo { inset: 22px 8px 8px; }
+    .cfg__photo { top:22px;right:8px;bottom:8px;left:8px;inset:22px 8px 8px; }
     .cfg__hint { top: 4px; bottom: auto; font-size: 10px; letter-spacing: .16em; }
 
     .cfg__sheet { display: block; grid-row: 3; grid-column: 1; position: relative; z-index: 4; isolation: isolate;
@@ -739,7 +743,7 @@ html .sng-crop__help, html .sng-crop__code, html .sng-crop [data-copy] { display
       border: 1px solid rgba(247,243,222,.14);
       box-shadow: inset 0 1px 0 rgba(255,255,255,.24), inset 0 -1px 0 rgba(255,255,255,.05), 0 24px 60px rgba(0,0,0,.55), 0 2px 8px rgba(0,0,0,.3); }
     /* riflesso del vetro in alto */
-    .cfg__sheet::before { content: ''; position: absolute; inset: 0; z-index: -1; border-radius: inherit; pointer-events: none;
+    .cfg__sheet::before { content: ''; position: absolute; top:0;right:0;bottom:0;left:0;inset:0; z-index: -1; border-radius: inherit; pointer-events: none;
       background: radial-gradient(120% 60% at 20% 0%, rgba(255,255,255,.10), transparent 60%); }
 
     .cfg__tabs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2px; padding: 3px; border-radius: 22px; background: rgba(0,0,0,.28); }
@@ -814,7 +818,7 @@ html .sng-crop__help, html .sng-crop__code, html .sng-crop [data-copy] { display
     background: linear-gradient(135deg, #b8913f 0%, #e9cf8e 45%, #c9a24e 100%); color: #1a130c;
     box-shadow: 0 10px 28px rgba(184,146,63,.35), inset 0 1px 0 rgba(255,250,230,.6); -webkit-tap-highlight-color: transparent;
     transition: transform .2s ease, box-shadow .2s ease; animation: cfgSaveIn .35s ease both; }
-  .cfg-send::after { content: ''; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(110deg, transparent 35%, rgba(255,255,255,.5) 50%, transparent 65%);
+  .cfg-send::after { content: ''; position: absolute; top:0;right:0;bottom:0;left:0;inset:0; pointer-events: none; background: linear-gradient(110deg, transparent 35%, rgba(255,255,255,.5) 50%, transparent 65%);
     transform: translateX(-120%); animation: cfgSendShine 3.5s ease-in-out 1s infinite; }
   @keyframes cfgSendShine { 0% { transform: translateX(-120%); } 30%, 100% { transform: translateX(120%); } }
   .cfg-send:hover { transform: translateY(-2px); box-shadow: 0 14px 34px rgba(184,146,63,.5), inset 0 1px 0 rgba(255,250,230,.6); }
@@ -842,8 +846,8 @@ html .sng-crop__help, html .sng-crop__code, html .sng-crop [data-copy] { display
   .emb__sw[aria-pressed="true"] { outline-color: var(--text); }
   .emb__sw:focus-visible { outline-color: var(--accent); }
   .emb__sw--any { overflow: hidden; background: conic-gradient(#e84a4a, #e8c84a, #5ec46a, #4ac4e8, #5a5ae8, #d84ae8, #e84a4a); }
-  .emb__sw--any::after { content: '+'; position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; color: #fff; font: 600 20px/1 Archivo, sans-serif; text-shadow: 0 1px 3px rgba(0,0,0,.6); pointer-events: none; }
-  .emb__sw--any input { position: absolute; inset: 0; width: 100%; height: 100%; padding: 0; border: 0; opacity: 0; cursor: pointer; }
+  .emb__sw--any::after { content: '+'; position: absolute; top:0;right:0;bottom:0;left:0;inset:0; display: flex; align-items: center; justify-content: center; color: #fff; font: 600 20px/1 Archivo, sans-serif; text-shadow: 0 1px 3px rgba(0,0,0,.6); pointer-events: none; }
+  .emb__sw--any input { position: absolute; top:0;right:0;bottom:0;left:0;inset:0; width: 100%; height: 100%; padding: 0; border: 0; opacity: 0; cursor: pointer; }
   .emb__sep { flex: none; width: 1px; height: 26px; background: rgba(247,243,222,.2); }
   .emb__reset { align-self: flex-start; padding: 2px 0; border: 0; background: none; color: var(--muted); font: 400 11px/1.3 Archivo, sans-serif; text-decoration: underline; text-underline-offset: 2px; cursor: pointer; }
   .emb__reset[hidden] { display: none; }
@@ -1004,7 +1008,7 @@ html .sng-crop__help, html .sng-crop__code, html .sng-crop [data-copy] { display
 
   /* Schermata con l'immagine creata */
   .cfg-share { --text: #f7f3de; --muted: rgba(247,243,222,.62); --line: rgba(247,243,222,.14); --btn: #f0ead2; --btn-text: #181511;
-    position: fixed; inset: 0; z-index: 1001; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 18px;
+    position: fixed; top:0;right:0;bottom:0;left:0;inset:0; z-index: 1001; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 18px;
     padding: 64px 16px max(20px, env(safe-area-inset-bottom)); background: rgba(10,8,6,.92); -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);
     color: #f7f3de; font: 400 15px/1.5 Archivo, system-ui, sans-serif; opacity: 0; transition: opacity .25s ease; }
   .cfg-share[hidden] { display: none; }
@@ -1036,7 +1040,7 @@ html .sng-crop__help, html .sng-crop__code, html .sng-crop [data-copy] { display
   @media (min-width: 900px) {
     .families { justify-items: stretch; align-items: stretch; }
     .fam { width: 100%; height: 100%; min-width: 0; justify-self: stretch; align-self: stretch; -webkit-appearance: none; appearance: none; }
-    .fam__chip { position: absolute; inset: 0; width: auto; height: auto; }
+    .fam__chip { position: absolute; top:0;right:0;bottom:0;left:0;inset:0; width: auto; height: auto; }
   }
   /* Avviso in alto: quando e dove si possono realizzare i pantaloni. Sta sopra il configuratore,
      che si accorcia da solo (--cfg-top misura dove comincia). */
